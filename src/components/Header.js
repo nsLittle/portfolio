@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header = () => {
     return (
-        <header id="header">
+        <header className="header">
             <nav>
                 <ul className='navList'>
                     <li className='navItem'>

@@ -7,19 +7,21 @@ const Home = () => {
             <Header />
 
             <div className="container">
-                <div className="box">
-                    <h1 className="web-title">Mutsumi Hata</h1>
-                    <p className="home-text">Software Developer</p>
-                </div>
-
-                <div className="skill-section">
+                <div className="professional-section">
                     <a href="https://www.linkedin.com/in/mutsumihata/" target="_blank">
-                        <img className="skill" src="/images/linkedin.png" alt="linkedin" />
+                        <img className="professional" src="/images/linkedin.png" alt="linkedin" />
                     </a>
                     <a href="https://github.com/nsLittle" target="_blank">
-                        <img className="skill" src="/images/github.png" alt="github" />
+                        <img className="professional" src="/images/github.png" alt="github" />
                     </a>
                 </div>
+
+
+                <div className="box-home">
+                    <h1 className="title-home">Mutsumi Hata</h1>
+                    <p className="text-home">Software Developer</p>
+                </div>
+
             </div>
 
             <Footer />

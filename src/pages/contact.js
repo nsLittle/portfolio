@@ -84,7 +84,7 @@ const Contact = () => {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className='input'
+                                    className='input-message'
                                     rows="5"
                                     required
                                 ></textarea>
