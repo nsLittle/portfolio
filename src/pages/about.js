@@ -7,12 +7,12 @@ const About = () => {
             <Header />
 
             <div className="container">
-            <div className="image-section">
+                <div className="image-section">
                     <img src="/images/selfie.png" alt="Selfie" />
                 </div>
-                <div className="text-section">
+                <div className="box">
                     <h1>About</h1>
-                    <p className="text-about">I am a software developer passionate about creating human-centered solutions that leverage technology to make our lives simpler, more efficient, and healthier. I build applications that empower individuals and teams to grow, connect, and thrive.</p>
+                    <p className="text">I am a software developer passionate about creating human-centered solutions by leveraging technology to make our lives simpler, more efficient, and more fulfilling.</p>
                 </div>
             </div>
 

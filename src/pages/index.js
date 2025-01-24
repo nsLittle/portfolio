@@ -7,9 +7,19 @@ const Home = () => {
             <Header />
 
             <div className="container">
-                <div className="text-section">
+                <div className="box">
                     <h1>Mutsumi Hata</h1>
-                    <p className="text-about">Software Developer</p>
+                    <p className="home-text">Software Developer</p>
+
+                    <div className="icon-section">
+                        <a href="https://www.linkedin.com/in/mutsumihata/" target="_blank">
+                            <img className="icon" src="/images/linkedin.png" alt="linkedin" />
+                        </a>
+                        <a href="https://github.com/nsLittle" target="_blank">
+                            <img className="icon" src="/images/github.png" alt="github" />
+                        </a>
+
+                    </div>
                 </div>
             </div>
 

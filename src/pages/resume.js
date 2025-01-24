@@ -7,8 +7,15 @@ const Resume = () => {
             <Header />
 
             <div className="container">
-                <h1>Resume</h1>
-                <p className="text-about">Hello World</p>
+                <div className="box">
+                    <h1>Resume</h1>
+                    <p className="text">Experience</p>
+                    <p className="text">Education</p>
+
+                        <div className="box-pdf">
+                            <iframe className="pdf" src="/images/resume.pdf" type="application/pdf" width="100%" height="600px" />
+                        </div>
+                </div>
             </div>
 
             <Footer />
