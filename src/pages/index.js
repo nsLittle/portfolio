@@ -8,18 +8,17 @@ const Home = () => {
 
             <div className="container">
                 <div className="box">
-                    <h1>Mutsumi Hata</h1>
+                    <h1 className="web-title">Mutsumi Hata</h1>
                     <p className="home-text">Software Developer</p>
+                </div>
 
-                    <div className="icon-section">
-                        <a href="https://www.linkedin.com/in/mutsumihata/" target="_blank">
-                            <img className="icon" src="/images/linkedin.png" alt="linkedin" />
-                        </a>
-                        <a href="https://github.com/nsLittle" target="_blank">
-                            <img className="icon" src="/images/github.png" alt="github" />
-                        </a>
-
-                    </div>
+                <div className="skill-section">
+                    <a href="https://www.linkedin.com/in/mutsumihata/" target="_blank">
+                        <img className="skill" src="/images/linkedin.png" alt="linkedin" />
+                    </a>
+                    <a href="https://github.com/nsLittle" target="_blank">
+                        <img className="skill" src="/images/github.png" alt="github" />
+                    </a>
                 </div>
             </div>
 

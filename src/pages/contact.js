@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -19,13 +20,28 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form Submitted:', formData);
-        setFormData({
-            fullName: '',
-            email: '',
-            message: ''
-        });
-    };
+
+
+        const SERVICE_ID = process.env.SERVICE_ID;
+        const TEMPLATE_ID = process.env.TEMPLATE_ID;
+        const PUBLIC_KEY = process.env.PUBLIC_KEY;
+
+    
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Message sent successfully!');
+                setFormData({
+                    fullName: '',
+                    email: '',
+                    message: ''
+                });
+            })
+            .catch((err) => {
+                console.error('FAILED...', err);
+                alert('Failed to send the message. Please try again later.');
+            });
+    };    
 
     return (
         <>
