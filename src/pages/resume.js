@@ -11,27 +11,26 @@ const Resume = () => {
                     <h1>Resume</h1>
                     <p className="text">Experience</p>
                         <div className="experience">
-                            <div className="experience-item">
-                                <div className="job-main">
+                            <div className="experience-unit">
+                                <div className="job-title">
                                     <p className="org">HopeMakers Collective,</p>
-                                    <p className="rank">Member,</p>
-                                    <p className="years">(2024 - present)</p>
+                                    <p className="job">Member,</p>
+                                    
+                                    <p className="job">(2024 - present)</p>
                                 </div>
                                 <div className="job-bullets">
                                     <ul>
-                                        <li>
-                                            Development of a mobile app to help users establish and sustain habits through the support of their community
-                                        </li>
+                                        <li>Development of a mobile app to help users establish and sustain habits through the support of their community</li>
                                         <li>Development of a community web hub</li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div className="experience-item">
-                                <div className="job-main">
+                                <div className="job-title">
                                     <p className="org">Parsity, </p>
-                                    <p className="rank">Student Software Engineer,</p>
-                                    <p className="years">(2024 - present)</p>
+                                    <p className="job">Student Software Engineer,</p>
+                                    <p className="job">(2024 - present)</p>
                                 </div>
 
                                 <div className="job-bullets"></div>

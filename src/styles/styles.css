@@ -149,14 +149,19 @@ h1 {
 }
 
 .icon-section {
-    margin-top: 80px;
-    width: 50%;
+    margin-top: 11%;
+    margin-left: 13%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 60%;
+    text-align: center;
 }
 
 .icon-gray{
     margin-left: 5%;
-    width: 8%;
+    width: 5%;
     padding: 10px;
 }
 
@@ -171,17 +176,30 @@ h1 {
 }
 
 /* RESUME */
-.job-main {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: left;
-    gap: 3px;
+.experience {
+    color: #333;
+    font-size: 1.7vw;
+    max-width: 55%;
+    line-height: 1.4;
+    margin-left: 5%;
 }
 
-.job-main p {
+.job-title {
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+    width: 300px;
+}
+
+.job-title p {
     margin: 0;
     white-space: nowrap;
+    text-align: left;
+}
+.job-builders {
+    width: 800px;
 }
 
 .box-pdf {
@@ -192,12 +210,12 @@ h1 {
     border: 1px solid #ccc;
 }
 
-.experience {
-    margin-left: 5%;
-}
-
 .org {
     font-weight: bold;
+}
+
+.job {
+    width: 500px
 }
 
 /* CONTACT */
