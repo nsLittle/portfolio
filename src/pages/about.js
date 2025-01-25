@@ -6,9 +6,11 @@ const About = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const texts = [
         "I am a software developer passionate about creating human-centered solutions by leveraging technology to make our lives simpler, more efficient, and more fulfilling.",
+        "Curiosity fuels the soul, and killed the cat.",
         "Master of priority juggling, nurturer of creativity, and finder of beauty in the mundane and chaotic—at life and at work.",
-        "The sophistication of simplicity—life’s greatest joys often come from small, thoughtful moments. Technology should be simple in utility and amplify one's joy.",
-        "And whimsy? It’s a daily necessity. Period."
+        "Cats have nine lives, and I have five cats.  The math is in my favor.",
+        "Life’s greatest joys often come from small, thoughtful moments. Technology should be simple in utility and amplify one's joy.",
+        "Whimsy? It’s a daily necessity. Period."
     ];
 
     useEffect(() => {
