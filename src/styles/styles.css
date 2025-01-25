@@ -247,14 +247,17 @@ h1 {
 }
 
 /* RESUME */
+.school,
 .experience {
     color: #333;
     font-size: 1.7vw;
     max-width: 75%;
     line-height: 1.4;
     margin-left: 5%;
+    margin-bottom: 20px;
 }
 
+.school-title,
 .job-title {
     display: flex;
     flex-wrap: nowrap; 
@@ -264,23 +267,24 @@ h1 {
     width: 200px;
 }
 
+.school-title p,
 .job-title p {
     margin: 0;
     white-space: nowrap;
     text-align: left;
 }
-.job-builders {
-    width: 800px;
-}
+
 
 .box-pdf {
     width: 22%;
     aspect-ratio: 1 / 1.5;
     overflow: hidden;
     margin-left: 5%;
+    margin-top: 50px;
     border: 1px solid #ccc;
 }
 
+.school-name,
 .org {
     font-weight: bold;
 }

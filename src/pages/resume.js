@@ -19,19 +19,17 @@ const Resume = () => {
                                 </div>
                                 <div className="job-bullets">
                                     <ul>
+                                        <li>Development of a mobile app to help users establish and sustain habits through the support of their community</li>
                                         <li>
-                                            Development of a mobile app to help users establish and sustain habits through the support of their community.
-                                        </li>
-                                        <li>
-                                            Development of a community web hub.
-                                        </li>
+                                            Development of a community web hu
+                                            </li>
                                     </ul>
                                 </div>
                             </div>
 
                             <div className="experience-item">
                                 <div className="job-title">
-                                    <p className="org">Parsity, </p>
+                                    <p className="org">Parsity,</p>
                                     <p className="job">Student Software Engineer,</p>
                                     <p className="job">(2024 - present)</p>
                                 </div>
@@ -46,7 +44,7 @@ const Resume = () => {
 
                             <div className="experience-item">
                                 <div className="job-title">
-                                    <p className="org">AirBnB, </p>
+                                    <p className="org">AirBnB,</p>
                                     <p className="job">SuperHost,</p>
                                     <p className="job">(2019 - 2023)</p>
                                 </div>
@@ -61,10 +59,11 @@ const Resume = () => {
                                         </li>
                                     </ul>
                             </div>
+
                             <div className="experience-item">
                                 <div className="job-title">
-                                    <p className="org">Boston Children’s Hospital, Boston, </p>
-                                    <p className="job"> Lab Administrator,</p>
+                                    <p className="org">Boston Children's Hospital, Boston,</p>
+                                    <p className="job"> Lab Administrator, Lieberman Lab</p>
                                     <p className="job">(2010 - 2013)</p>
                                 </div>
 
@@ -81,12 +80,68 @@ const Resume = () => {
                                         </li>
                                     </ul>
                             </div>
+
+                            <div className="experience-item">
+                                <div className="job-title">
+                                    <p className="org">MIT Media Lab,</p>
+                                    <p className="job">Program Manager, Center for Future Banking,</p>
+                                    <p className="job">(2008 - 2010)</p>
+                                </div>
+                                <div className="job-bullets">
+                                    <ul>
+                                        <li>
+                                            Development of a mobile app to help users establish and sustain habits through the support of their community.
+                                        </li>
+                                        <li>
+                                            Directed planning and execution of 5-10 sponsor engagement events monthly, fostering high-impact collaborations between academic researchers and corporate executives.
+                                        </li>
+                                        <li>
+                                            Recruited and led a team of administrative staff, ensuring seamless execution of sponsor visits and operational logistics.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="experience-item">
+                                <div className="job-title">
+                                    <p className="org">MIT Media Lab,</p>
+                                    <p className="job">Administrative Assistant, Cognitive Machines Group,</p>
+                                    <p className="job">(22007 - 2010)</p>
+                                </div>
+                                <div className="job-bullets">
+                                    <ul>
+                                        <li>
+                                        Delivered financial oversight for an $800K annual research group budget, maintaining compliance with grant requirements and ensuring financial health.
+                                        </li>
+                                        <li>
+                                        Built and led a team of 12+ transcribers for a complex multi-year data tracking project, delivering high-quality results under strict timelines.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
                         </div>
 
                     <p className="text">Education</p>
+                        <div className="school">
+                            <div className="school-item">
+                                <div className="school-title">
+                                    <p className="school-name">Parsity.io,</p>
+                                    <p className="school-details">software engineering program,</p>
+                                    <p className="school-details">(2024 - present)</p>
+                                </div>
+                            </div>
+                            <div className="school-item">
+                                <div className="school-title">
+                                    <p className="school-name">Smith College,</p>
+                                    <p className="school-details">Major (anthropology); Minor (internationl relations),</p>
+                                    <p className="school-details">(2024 - present)</p>
+                                </div>
+                            </div>
 
-                        <div className="box-pdf">
-                            <iframe className="pdf" src="/images/resume.pdf" type="application/pdf" width="100%" height="600px" />
+                                <div className="box-pdf">
+                                    <iframe className="pdf" src="/images/resume.pdf" type="application/pdf" width="100%" height="600px" />
+                                </div>
                         </div>
                 </div>
             </div>

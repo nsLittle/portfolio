@@ -6,7 +6,7 @@
 
 ## TO DO 
 
-1. Resume => add text to page
+1. ~~Resume => add text to page~~
 2. ~~About => make language icons dynamic~~
 3. ~~About => add additional sentences~~
 4. ~~About => make sentences dynamic~~
