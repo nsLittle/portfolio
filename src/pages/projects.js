@@ -26,7 +26,7 @@ const Projects = () => {
                         </a>
 
                         <p className="text">The Shopping Experience</p>
-                        <p className="text">** product list app coming **</p>
+                        <p className="yikes">** product list app coming **</p>
                 </div>
             </div> 
 

@@ -1,7 +1,38 @@
+import { useState, useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const About = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const texts = [
+        "I am a software developer passionate about creating human-centered solutions by leveraging technology to make our lives simpler, more efficient, and more fulfilling.",
+        "Master of priority juggling, nurturer of creativity, and finder of beauty in the mundane and chaotic—at life and at work.",
+        "The sophistication of simplicity—life’s greatest joys often come from small, thoughtful moments. Technology should be simple in utility and amplify one's joy.",
+        "And whimsy? It’s a daily necessity. Period."
+    ];
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        }, 5000);
+        return () => clearInterval(interval);
+    }, [texts.length]);
+
+    const scrollRef = useRef(null);
+
+    useEffect(() => {
+        const container = scrollRef.current;
+        const cloneIcons = () => {
+            if (container) {
+                const icons = container.children;
+                const clone = Array.from(icons).map((icon) => icon.cloneNode(true));
+                clone.forEach((node) => container.appendChild(node));
+            }
+        };
+
+        cloneIcons();
+    }, []);
+
     return (
         <>
             <Header />
@@ -12,10 +43,17 @@ const About = () => {
                 </div>
                 <div className="box">
                     <h1>About</h1>
-                    <p className="text">I am a software developer passionate about creating human-centered solutions by leveraging technology to make our lives simpler, more efficient, and more fulfilling.</p>
+                    {texts.map((text, index) => (
+                        <p
+                            key={index}
+                            className={`dynamic-text ${index === activeIndex ? "visible" : "hidden"}`}
+                        >
+                            {text}
+                        </p>
+                    ))}
                 </div>
 
-                <div className="icon-section">
+                <div className="icon-section scrolling" ref={scrollRef}>
                     <img className="icon-gray" src="/images/react.png" alt="react" />
                     <img className="icon-gray" src="/images/nextjs.png" alt="nextjs" />
                     <img className="icon-gray" src="/images/node.png" alt="nodejs" />
