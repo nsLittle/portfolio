@@ -20,9 +20,7 @@ const Resume = () => {
                                 <div className="job-bullets">
                                     <ul>
                                         <li>Development of a mobile app to help users establish and sustain habits through the support of their community</li>
-                                        <li>
-                                            Development of a community web hu
-                                            </li>
+                                        <li>Currently developing a community web hub with AI-personalized platform, offering exclusive member content, and tiered memberships.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -36,9 +34,7 @@ const Resume = () => {
 
                                 <div className="job-bullets"></div>
                                     <ul>
-                                        <li>
-                                            Built applications using the MERN stack, implementing dynamic filtering, pagination, and user authentication.
-                                        </li>
+                                        <li>Built applications using the MERN stack, implementing dynamic filtering, pagination, and user authentication. </li>
                                     </ul>
                             </div>
 
@@ -138,10 +134,15 @@ const Resume = () => {
                                     <p className="school-details">(2024 - present)</p>
                                 </div>
                             </div>
+                        </div>
+                        <p className="text">Technical Skills</p>
+                            <div className="technical">
+                                <p className="skills"><b>Technical Skills:</b> JavaScript  |  TypeScript  |  React.js  |  Next.js  |  React Native  |  Node.js  |  Express.js  |  MongoDB  |  Mongoose  |  RESTful APIs  |  JWT Authentication  |  Swagger  |  Git  |  Postman  |  Mocha  |  Tailwind CSS  |  Bootstrap  |  Netlify  |  Vercel  |  Heroku</p>
+                            </div>
 
-                                <div className="box-pdf">
-                                    <iframe className="pdf" src="/images/resume.pdf" type="application/pdf" width="100%" height="600px" />
-                                </div>
+                        <p className="text">Downloadable PDF</p>
+                        <div className="box-pdf">
+                            <iframe className="pdf" src="/images/resume.pdf" type="application/pdf" width="100%" height="600px" />
                         </div>
                 </div>
             </div>

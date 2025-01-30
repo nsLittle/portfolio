@@ -128,10 +128,10 @@ h1 {
 }
 
 .pro-link-row {
-    display: flex; /* Arrange icons in a single row */
-    justify-content: flex-end; /* Align icons to the right */
-    width: auto; /* Shrink the row width to fit the icons */
-    gap: 10px; /* Space between the icons */
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+    gap: 10px;
 }
 
 .pro-link {
@@ -247,6 +247,11 @@ h1 {
 }
 
 /* RESUME */
+.skills {
+    margin-top: 50px;
+}
+
+.technical,
 .school,
 .experience {
     color: #333;
@@ -274,14 +279,22 @@ h1 {
     text-align: left;
 }
 
-
 .box-pdf {
-    width: 22%;
+    width: 33%;
     aspect-ratio: 1 / 1.5;
     overflow: hidden;
     margin-left: 5%;
     margin-top: 50px;
     border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-pdf iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .school-name,
