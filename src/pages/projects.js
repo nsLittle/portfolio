@@ -8,7 +8,7 @@ const Projects = () => {
 
             <div className="container">
                 <div className="box">
-                    <h1>Projects</h1>
+                    <h2>Projects</h2>
         
                     <p className="text">Power of Prompt Engineering</p>
                     <p className="text-sub">Designed a custom ChatGPT API integration to process user input, delivering tailored, context-specific reframed outputs in real time.</p>

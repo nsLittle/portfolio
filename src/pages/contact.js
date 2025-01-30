@@ -49,7 +49,7 @@ const Contact = () => {
 
             <div className='container'>
                 <div className='box'>
-                    <h1>Contact Me</h1>
+                    <h2>Contact Me</h2>
                     <form onSubmit={handleSubmit} className='text'>
                             <div className='submission-form'>
                                 <label htmlFor="fullName" className='field-title'>Full Name</label>
