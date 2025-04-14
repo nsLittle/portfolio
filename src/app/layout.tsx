@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Mutsumi Hata Portfolio",
@@ -15,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="text-gray-900">
+      <body
+        className="text-gray-900 bg-[url('/images/white-brick.jpg')] bg-cover bg-no-repeat bg-left bg-fixed pt-16"
+        style={{ minHeight: "100vh" }}>
         <div
           style={{
             backgroundImage: "url('/images/white-brick.jpg')",
@@ -26,9 +29,7 @@ export default function RootLayout({
           }}>
           <Header />
           <main className="min-h-screen">{children}</main>
-          <footer className="p-4 bg-gray-100 text-sm text-center">
-            Footer here
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>

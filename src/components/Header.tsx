@@ -4,9 +4,11 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-transparent backdrop-blur-sm border-b border-gray-300 shadow-sm">
-      <nav className="max-w-7xl mx-auto px-4 py-4">
-        <ul className="flex justify-end space-x-6 text-sm font-medium text-gray-700">
+    <header
+      id="header"
+      className="fixed top-0 left-0 right-0 z-50 h-16 bg-[url('/images/white-brick.jpg')] bg-cover bg-center border-b border-gray-300 shadow-sm">
+      <nav className="max-w-9xl mx-auto px-10 py-6">
+        <ul className="flex justify-end space-x-6 text-base font-medium text-gray-700">
           <li>
             <Link href="/" className="hover:text-gray-900">
               Home
