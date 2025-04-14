@@ -1,76 +1,97 @@
-```markdown
 # Mutsumi Hata - Software Engineer Portfolio
 
-## 🚀 Overview
-This is my personal **portfolio website**, designed as a **static Next.js application** to showcase my projects, skills, and professional experience as a **junior software engineer**. The goal is to keep the site **modular and scalable** as I develop my career.
+## Overview
 
-The portfolio is currently **deployed on Netlify** and will be accessible via my custom domain **[mutsumi.io](http://mutsumi.io)** (pending DNS update). It features a **functional contact form**, direct links to my **GitHub** and **LinkedIn**, and select projects.
+This is my personal **portfolio website**, built as a **static Next.js application** using the modern App Router architecture. It showcases my work, technical skills, and design sensibility as a **junior software engineer** focused on clean code, maintainability, and real-world functionality.
 
----
+The site is designed with a hybrid styling approach—leveraging **Tailwind CSS for layout and responsiveness**, while using **vanilla CSS and inline styles** where needed for full visual control (e.g., background textures, layering). The result is a cleaner, more elegant UI with fewer framework tradeoffs.
 
-## 🛠 Tech Stack
-- **Next.js**: Static site generation and optimized performance
-- **React**: Component-based structure for reusability
-- **CSS**: Custom styling (Future plans: Implement **Tailwind CSS** or **Bootstrap** for scalability)
-- **Netlify**: Hosting and continuous deployment
+The site is deployed via **Netlify**, accessible at **[mutsumi.io](http://mutsumi.io)** (pending DNS finalization), and integrates directly with **GitHub**, **LinkedIn**, and a **functional contact form** via Email.js.
 
 ---
 
-## 📌 Features
-- **Showcase Projects**: Image-based links to deployed applications
-- **GitHub & LinkedIn Integration**: Easy access to my repositories and professional profile
-- **Functional Contact Form**: Uses **Email.js** to enable direct communication without exposing my email
-- **Scalability**: Modular architecture for easy expansion
+## Tech Stack
+
+- **Next.js (App Router)**: Static site generation, route-based layouts
+- **React**: Component-driven architecture
+- **Tailwind CSS**: Layout, spacing, typography, and responsiveness
+- **Inline styles**: Used intentionally for complex or fragile visuals (e.g. background image layering)
+- **Email.js**: Enables contact form without exposing email address
+- **Netlify**: Hosting, continuous deployment, custom domain support
 
 ---
 
-## 📂 Project Sections
-### 🔹 Power of Prompt Engineering
-- **Description**: Implemented **custom ChatGPT API integration** to process user input, delivering **real-time, context-aware** output modifications.
-- **Deployments**: Three interactive input/output applications
+## Features
 
-### 🔹 Contact List
-- **Description**: A **Next.js application** demonstrating state management, dynamic routing, and data persistence.
-- **GitHub Repo**: [Contact List Repository](https://github.com/nsLittle/contact-list-nextjs)
+- **Modular Component Architecture**: Pages, header, and footer split into clean, reusable files
+- **White Brick Background**: Fixed aesthetic using inline style to bypass Tailwind's purge issues
+- **Responsive Layout**: Mobile-friendly, accessible design
+- **Project Highlights**: Direct links to real deployments and repositories
+- **Live Contact Form**: Built with Email.js for direct outreach
+
+---
+
+## Project Sections
+
+### Power of Prompt Engineering
+
+- **Overview**: Interactive tools using **OpenAI API** to demonstrate prompt design and real-time content transformation
+- **Key Features**: Real-time context updates, conversational interface
+
+### Contact List
+
+- **Overview**: CRUD Next.js app using dynamic routing and state management
+- **GitHub**: [Repo](https://github.com/nsLittle/contact-list-nextjs)
 - **Deployment**: Hosted on Netlify
 
 ---
 
-## 🛠 How to Run the Portfolio Locally
-1. Clone the repository:
+## How to Run the Portfolio Locally
+
+1. Clone the repo:
    ```bash
    git clone https://github.com/nsLittle/portfolio.git
    ```
-2. Navigate to the project folder:
+2. Navigate:
    ```bash
    cd portfolio
    ```
-3. Install dependencies:
+3. Install:
    ```bash
    npm install
    ```
-4. Start the development server:
+4. Run:
    ```bash
    npm run dev
    ```
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+5. Open `http://localhost:3000` in browser.
 
 ---
 
-## 🔧 Future Enhancements
-1. **Tailwind CSS or Bootstrap**: Improve design consistency and scalability
-2. **Dark Mode Toggle**: Enhance user experience with theme switching
-3. **SEO Optimization**: Improve discoverability for recruiters
-4. **Blog Section**: Share insights and technical learning
-5. **Performance Optimizations**: Lazy loading and code-splitting improvements
+## Design Philosophy
+
+While Tailwind is powerful, it comes with limitations around dynamic class names, purge behavior, and visual layering. This project uses:
+
+- **Tailwind for what it's best at**: layout, spacing, typography, responsiveness
+- **Inline styles/CSS for precision**: backgrounds, blur overlays, and anything purge-prone
+
+This hybrid approach ensures the cleanest possible visual result without over-engineering.
 
 ---
 
-## 💡 Contact Me
+## Future Enhancements
 
-🔗 [GitHub](https://github.com/nsLittle)  
-🔗 [LinkedIn](https://www.linkedin.com/in/mutsumihata)  
-
-Feel free to reach out for collaboration, job opportunities, or questions about my work!
+- [ ] Dark Mode Toggle
+- [ ] Blog Section for technical writing
+- [ ] SEO Optimization (structured metadata, OG tags)
+- [ ] Accessibility Improvements (skip links, ARIA landmarks)
+- [ ] Lazy Loading & Code Splitting for performance
 
 ---
+
+## Contact Me
+
+- [GitHub](https://github.com/nsLittle)
+- [LinkedIn](https://www.linkedin.com/in/mutsumihata)
+
+I'm open to opportunities, collaboration, or just connecting with fellow developers. Thanks for visiting!
