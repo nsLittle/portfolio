@@ -1,9 +1,11 @@
 export default function Home() {
   return (
-    <section className="flex flex-col items-end justify-center min-h-[80vh] px-6 md:px-20">
-      <div className="space-y-4 text-right">
-        <p className="text-xl text-gray-500">Fullstack Software Engineer</p>
-        <h1 className="text-8xl font-bold text-gray-600">Mutsumi Hata</h1>
+    <section className="flex flex-col items-end justify-start pt-60 px-0 md:px-20">
+      <div className="space-y-1 text-right">
+        <p className="text-[1.75rem] text-[#7a7a7a] tracking-wider">
+          Fullstack Software Engineer
+        </p>
+        <h1 className="text-[6.5rem] font-bold text-[#5a5a5a]">Mutsumi Hata</h1>
       </div>
     </section>
   );

@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
+import Head from "next/head";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Mutsumi Hata Portfolio",
+  title: "Portfolio",
   description:
     "Fullstack Software Engineer | Creative Technologist | Empathic Strategist",
+  icons: {
+    icon: "/images/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -16,15 +20,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/images/favicon.ico" type="image/jpeg" />
+      </Head>
       <body
-        className="text-gray-900 bg-[url('/images/white-brick.jpg')] bg-cover bg-no-repeat bg-left bg-fixed pt-16"
+        className="bg-white-brick bg-cover bg-no-repeat bg-left-top bg-fixed"
         style={{ minHeight: "100vh" }}>
         <div
           style={{
             backgroundImage: "url('/images/white-brick.jpg')",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
-            backgroundPosition: "left center",
+            backgroundPosition: "left top",
+            backgroundAttachment: "fixed",
             minHeight: "100vh",
           }}>
           <Header />
