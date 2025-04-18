@@ -19,12 +19,12 @@ export default function AboutPage() {
   ];
 
   const texts = [
-    "I'm a software developer passionate about creating human-centered solutions by leveraging technology to make our lives simpler, more efficient, and more fulfilling.",
-    "Master of priority juggling, nurturer of creativity, and finder of beauty in the mundane and chaotic. At life and at work.",
-    "Curiosity fuels the soul, and killed the cat.",
-    "Cats have nine lives, and I have five cats.  The math is in my favor.",
-    "Life's greatest joys often come from small, thoughtful moments. Technology should be simple in utility and amplify one's joy.",
-    "Whimsy? It's a daily necessity. Period.",
+    "I'm a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
+    "Master juggler of priorities, nurturer of creativity, I find beauty in the mundane and chaotic.",
+    "Curiosity fuels the soul, sometimes kills the cat.",
+    "Cats have nine lives, and I have five. Numbers are in my favor.",
+    "Life's greatest joys often come from small, thoughtful moments. Technology can help amplify that joy.",
+    "Whimsy is a daily necessity.",
   ];
 
   useEffect(() => {
