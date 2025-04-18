@@ -97,7 +97,7 @@ export default function ContactPage() {
               name="message"
               value={templateParams.message}
               onChange={handleChange}
-              rows="5"
+              rows={5}
               className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
               required></textarea>
           </div>
