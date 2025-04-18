@@ -8,23 +8,23 @@ export default function ResumePage() {
     <>
       <Header />
 
-      <div className="ml-[100px] pt-[100px] pb-[100px] text-[#5a5a5a]">
-        <div className="mt-8 flex justify-end gap-x-8 pr-[80px] text-[#5a5a5a]">
+      <div className="ml-[100px] pt-[130px] pb-[100px] text-[#5a5a5a]">
+        <h2 className="text-7xl font-bold">Resume</h2>
+
+        <div className="mt-0 flex justify-end gap-x-8 pr-[80px] text-[#5a5a5a]">
           <a href="/images/resume.pdf" download aria-label="Download PDF">
             <FaDownload className="w-5 h-5 hover:text-black cursor-pointer" />
           </a>
-
           <a
             href="/images/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Open PDF to Print">
-            <FaPrint className="w-6 h-6 hover:text-black cursor-pointer" />
+            <FaPrint className="w-5 h-5 hover:text-black cursor-pointer" />
           </a>
         </div>
-        <h2 className="text-7xl font-bold">Resume</h2>
 
-        <h5 className="ml-[25px] text-3xl pt-[20px]">
+        <h5 className="ml-[25px] text-3xl pt-[25px]">
           Fullstack Software Engineer
         </h5>
         <div className="ml-[25px] job-title flex flex-row gap-x-2 mt-4">
@@ -264,7 +264,7 @@ export default function ResumePage() {
         <div className="ml-[25px] job-title flex flex-row gap-x-2 mt-4">
           <p className="text-base pt-[5px]">
             <span className="font-bold">MIT Media Lab</span> | Administrative
-            Assistant @ Cognitive Machines Group | 2007 - 2010
+            Assistant | Cognitive Machines Group | 2007 - 2010
           </p>
         </div>
         <div className="text-base pl-[50px] pt-[5px] w-[80%] text-justify">
