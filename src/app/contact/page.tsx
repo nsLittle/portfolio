@@ -6,7 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
+  const [templateParams, setTemplateParams] = useState({
     fullName: "",
     email: "",
     message: "",
@@ -14,8 +14,8 @@ export default function ContactPage() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setTemplateParams({
+      ...templateParams,
       [name]: value,
     });
   };
@@ -23,16 +23,16 @@ export default function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const SERVICE_ID = process.env.SERVICE_ID;
-    const TEMPLATE_ID = process.env.TEMPLATE_ID;
-    const PUBLIC_KEY = process.env.PUBLIC_KEY;
+    const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
     emailjs
-      .send(SERVICE_ID, TEMPLATE_ID, formData, PUBLIC_KEY)
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         alert("Message sent successfully!");
-        setFormData({
+        setTemplateParams({
           fullName: "",
           email: "",
           message: "",
@@ -48,64 +48,61 @@ export default function ContactPage() {
     <>
       <Header />
 
-      <div className="container">
-        <div className="box">
-          <h2>Contact Me</h2>
-          <form onSubmit={handleSubmit} className="text">
-            <div className="submission-form">
-              <label htmlFor="fullName" className="field-title">
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="fullName"
-                name="fullName"
-                value={formData.fullName}
-                onChange={handleChange}
-                className="input"
-                required
-              />
-            </div>
+      <div className="px-[100px] pt-[130px] pb-[100px] text-[#5a5a5a]">
+        <h2 className="text-7xl font-bold mb-12">Contact Me</h2>
 
-            <div className="submission-form">
-              <label htmlFor="email" lassName="field-title">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="input"
-                required
-              />
-            </div>
+        <form onSubmit={handleSubmit} className="max-w-xl space-y-8">
+          <div className="flex flex-col">
+            <label htmlFor="fullName" className="mb-2 font-semibold">
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              value={templateParams.fullName}
+              onChange={handleChange}
+              className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              required
+            />
+          </div>
 
-            <div style={{ marginBottom: "15px" }}>
-              <label
-                htmlFor="message"
-                style={{ display: "block", marginBottom: "5px" }}>
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                className="input-message"
-                rows="5"
-                required></textarea>
-            </div>
+          <div className="flex flex-col">
+            <label htmlFor="email" className="mb-2 font-semibold">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={templateParams.email}
+              onChange={handleChange}
+              className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              required
+            />
+          </div>
 
-            <button type="submit" className="button">
-              Submit
-            </button>
-          </form>
-        </div>
+          <div className="flex flex-col">
+            <label htmlFor="message" className="mb-2 font-semibold">
+              Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              value={templateParams.message}
+              onChange={handleChange}
+              rows="5"
+              className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+              required></textarea>
+          </div>
+
+          <button
+            type="submit"
+            className="bg-[#5a5a5a] hover:bg-gray-700 text-white px-6 py-3 mt-[30px] rounded shadow-md transition-all duration-200">
+            Submit
+          </button>
+        </form>
       </div>
-
-      <Footer />
     </>
   );
 }
