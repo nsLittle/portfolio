@@ -223,8 +223,8 @@ export default function ResumePage() {
         </div>
         <div className="ml-[25px] job-title flex flex-row gap-x-2 mt-4">
           <p className="text-base pt-[5px]">
-            <span className="font-bold">Boston Children's Hospital</span> | Lab
-            Administrator | Lieberman Lab | 2010 - 2013
+            <span className="font-bold">Boston Children&apos;s Hospital</span> |
+            Lab Administrator | Lieberman Lab | 2010 - 2013
           </p>
         </div>
         <div className="text-base pl-[50px] pt-[5px] w-[80%] text-justify">

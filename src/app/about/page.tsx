@@ -1,4 +1,6 @@
 "use client";
+import Image from "next/image";
+
 import { useState, useEffect, useRef } from "react";
 import { FaDownload, FaPrint, FaLinkedin, FaGithub } from "react-icons/fa";
 import Header from "@/components/Header";
