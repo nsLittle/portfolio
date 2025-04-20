@@ -3,6 +3,7 @@ import Head from "next/head";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -26,19 +27,21 @@ export default function RootLayout({
       <body
         className="bg-white-brick bg-cover bg-no-repeat bg-left-top bg-fixed"
         style={{ minHeight: "100vh" }}>
-        <div
-          style={{
-            backgroundImage: "url('/images/white-brick.jpg')",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "left top",
-            backgroundAttachment: "fixed",
-            minHeight: "100vh",
-          }}>
-          <Header />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-        </div>
+        <ThemeProvider>
+          <div
+            style={{
+              backgroundImage: "url('/images/white-brick.jpg')",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "left top",
+              backgroundAttachment: "fixed",
+              minHeight: "100vh",
+            }}>
+            <Header />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
