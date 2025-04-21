@@ -1,8 +1,9 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useTheme } from "@/context/ThemeContext";
 
-export default function DarkModeToggle() {
+export default function ToggleThemeButton() {
   const { theme, toggleTheme } = useTheme();
   const [hasMounted, setHasMounted] = useState(false);
 
@@ -12,26 +13,21 @@ export default function DarkModeToggle() {
 
   if (!hasMounted) return null;
 
-  const isDark = theme === "dark";
-  console.log("Current theme:", theme);
+  const iconSrc = theme === "dark" ? "/images/light.png" : "/images/dark.png";
 
   return (
     <button
       onClick={toggleTheme}
-      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
-      className="w-24 h-10 px-4 py-2 flex items-center justify-center rounded-full border shadow hover:shadow-md transition-all duration-200"
-      style={{
-        backgroundColor: "var(--button-bg)",
-        borderColor: "#999",
-      }}>
-      <img
-        src={isDark ? "/images/light.png" : "/images/dark.png"}
-        alt={isDark ? "Light mode icon" : "Dark mode icon"}
-        className="w-full h-full object-contain"
-        style={{
-          filter: "invert(1)",
-        }}
-      />
+      aria-label={
+        theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+      }
+      className={`w-10 h-6 flex items-center justify-center rounded-full shadow-sm hover:shadow-md transition
+    ${
+      theme === "dark"
+        ? "bg-[#f0f0e6] border-[#ddd]"
+        : "bg-[#444] border-[#555]"
+    }`}>
+      <Image src={iconSrc} alt="Toggle theme" width={16} height={16} />
     </button>
   );
 }

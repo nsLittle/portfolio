@@ -10,13 +10,13 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed top-0 left-0 right-0 z-50 h-30 bg-cover bg-center border-b border-gray-300 shadow-sm">
+      className="fixed top-0 left-0 right-0 z-50 h-30 bg-[url('/images/white-brick.jpg')] bg-cover bg-center border-b border-gray-300 shadow-sm">
       <div className="flex justify-between items-start px-10 pt-2">
         <div className="px-5 mt-10">
           <DarkModeToggle />
         </div>
         <nav className="px-4 mt-10">
-          <ul className="flex justify-end space-x-6 text-xl font-medium text-[color:var(--text-color)]">
+          <ul className="flex justify-end space-x-6 text-xl font-medium">
             {pathname !== "/" && (
               <li>
                 <Link href="/" className="hover:text-gray-900">

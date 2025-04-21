@@ -37,6 +37,7 @@ html.dark {
 
 html.dark header {
   background-image: url("/images/black-brick.jpg");
+  color: var(--text-color);
 }
 
 section,
