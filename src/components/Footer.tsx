@@ -7,8 +7,9 @@ export default function Footer() {
   return (
     <footer className="bg-header-light dark:bg-header-dark bg-cover bg-center text-gray-700 dark:text-gray-200 text-sm px-2 sm:px-6 py-6 border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-4xl mx-auto flex flex-col justify-start items-start gap-y-1 ps-1 text-sm text-[#5a5a5a]">
-        <p className="text-sm text-[#5a5a5a]">© 2025 Mutsumi Hata</p>
-        <p className="text-sm text-[#b0b0b0]">
+        <p className="text-sm text-[#737373]">© 2025 Mutsumi Hata</p>
+
+        {/* <p className="text-sm text-[#b0b0b0]">
           Light mode background image by
           <a
             className="hover:underline"
@@ -25,8 +26,9 @@ export default function Footer() {
             rel="noopener noreferrer">
             Freepik
           </a>
-        </p>
-        <p className="text-sm text-[#b0b0b0]">
+        </p> */}
+
+        {/* <p className="text-sm text-[#b0b0b0]">
           Dark mode background image by
           <a
             className="hover:underline"
@@ -43,7 +45,26 @@ export default function Footer() {
             rel="noopener noreferrer">
             Freepik
           </a>
-        </p>
+        </p> */}
+
+        {/* <p className="text-sm text-[#b0b0b0]">
+          Dark (grey) mode background image by
+          <a
+            className="hover:underline"
+            href="https://www.freepik.com/author/kues"
+            target="_blank"
+            rel="noopener noreferrer">
+            kues
+          </a>
+          on
+          <a
+            className="hover:underline"
+            href="https://www.freepik.com/free-photo/background-grunge-brick-wall_932398.htm#fromView=search&page=1&position=42&uuid=334b9148-d8ff-46a7-b9ce-53e4f3d116de&query=grey+brick+background"
+            target="_blank"
+            rel="noopener noreferrer">
+            Freepik
+          </a>
+        </p> */}
       </div>
     </footer>
   );

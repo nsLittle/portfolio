@@ -31,16 +31,7 @@ export default function RootLayout({
         className={`${inter.className} bg-brick-light dark:bg-brick-dark`}
         style={{ minHeight: "100vh" }}>
         <ThemeProvider>
-          <div
-          // style={{
-          //   backgroundImage: "url('/images/white-brick.jpg')",
-          //   backgroundSize: "cover",
-          //   backgroundRepeat: "no-repeat",
-          //   backgroundPosition: "left top",
-          //   backgroundAttachment: "fixed",
-          //   minHeight: "100vh",
-          // }}
-          >
+          <div>
             <Header />
             <main className="min-h-screen">{children}</main>
             <Footer />
