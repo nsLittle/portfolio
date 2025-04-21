@@ -8,10 +8,10 @@ export default function ResumePage() {
     <>
       <Header />
 
-      <div className="ml-[100px] pt-[130px] pb-[100px] text-[#5a5a5a]">
+      <div className="ml-[100px] pt-[130px] pb-[100px] text-[color:var(--text-color)]">
         <h2 className="text-7xl font-bold">Resume</h2>
 
-        <div className="mt-0 flex justify-end gap-x-8 pr-[80px] text-[#5a5a5a]">
+        <div className="mt-0 flex justify-end gap-x-8 pr-[80px] text-[color:var(--text-color)]">
           <a href="/images/hata-resume.pdf" download aria-label="Download PDF">
             <FaDownload className="w-5 h-5 hover:text-black cursor-pointer" />
           </a>

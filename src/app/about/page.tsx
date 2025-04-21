@@ -38,7 +38,7 @@ export default function AboutPage() {
     <>
       <Header />
 
-      <div className="ml-[100px] pt-[130px] pb-[100px] text-[#5a5a5a]">
+      <div className="ml-[100px] pt-[130px] pb-[100px] text-[#737373]">
         <h2 className="text-7xl font-bold">About</h2>
         <div className="flex flex-row items-start justify-between gap-12 px-[100px] pt-[80px] pl-[40px]">
           <div className="relative w-[320px] h-[320px]">
@@ -60,7 +60,7 @@ export default function AboutPage() {
                 key={index}
                 className={`absolute top-0 left-0 transition-opacity duration-1000 ease-in-out ${
                   index === activeIndex ? "opacity-100" : "opacity-0"
-                } text-red-500 filter grayscale text-lg text-center`}>
+                } text-[#737373] filter grayscale text-lg text-center`}>
                 {text}
               </p>
             ))}

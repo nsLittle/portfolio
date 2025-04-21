@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -25,18 +28,10 @@ export default function RootLayout({
         <link rel="icon" href="/images/favicon.ico" type="image/jpeg" />
       </Head>
       <body
-        className="bg-white-brick bg-cover bg-no-repeat bg-left-top bg-fixed"
+        className={`${inter.className} bg-brick-light dark:bg-brick-dark`}
         style={{ minHeight: "100vh" }}>
         <ThemeProvider>
-          <div
-            style={{
-              backgroundImage: "url('/images/white-brick.jpg')",
-              backgroundSize: "cover",
-              backgroundRepeat: "no-repeat",
-              backgroundPosition: "left top",
-              backgroundAttachment: "fixed",
-              minHeight: "100vh",
-            }}>
+          <div>
             <Header />
             <main className="min-h-screen">{children}</main>
             <Footer />

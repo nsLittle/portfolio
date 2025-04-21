@@ -3,6 +3,7 @@ import React, {
   createContext,
   useContext,
   useEffect,
+  useLayoutEffect,
   useState,
   ReactNode,
 } from "react";
@@ -22,17 +23,16 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     const storedTheme = localStorage.getItem("theme");
     if (storedTheme === "dark" || storedTheme === "light") {
       setTheme(storedTheme);
+    } else {
+      setTheme("light");
+      localStorage.setItem("theme", "light");
     }
     setHasHydrated(true);
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!hasHydrated) return;
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
+    document.documentElement.classList.toggle("dark", theme === "dark");
   }, [theme, hasHydrated]);
 
   const toggleTheme = () => {
