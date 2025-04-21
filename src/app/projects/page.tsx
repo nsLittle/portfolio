@@ -53,7 +53,7 @@ export default function ProjectsPage() {
             <img
               src="/images/thumbprint-reframer.png"
               alt="Reframer Thumbprint"
-              className="w-50 rounded shadow-md hover:scale-105 transition"
+              className="w-60 rounded shadow-md hover:scale-105 transition"
             />
           </a>
           <a
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
             <img
               src="/images/thumbprint-negativity.png"
               alt="Negativity Thumbprint"
-              className="w-50 rounded shadow-md hover:scale-105 transition"
+              className="w-60 rounded shadow-md hover:scale-105 transition"
             />
           </a>
           <a
@@ -73,7 +73,7 @@ export default function ProjectsPage() {
             <img
               src="/images/thumbprint-limitless.png"
               alt="Limitless Thumbprint"
-              className="w-50 rounded shadow-md hover:scale-105 transition"
+              className="w-60 rounded shadow-md hover:scale-105 transition"
             />
           </a>
         </div>
@@ -96,9 +96,9 @@ export default function ProjectsPage() {
             target="_blank"
             rel="noopener noreferrer">
             <img
-              src="/images/thumbprint-contact-one.png"
+              src="/images/thumbprint-contact-three.png"
               alt="Contact List Thumbprint"
-              className="w-50 rounded shadow-md hover:scale-105 transition"
+              className="w-60 rounded shadow-md hover:scale-105 transition border-8 border-gray-700"
             />
           </a>
           <a
@@ -106,9 +106,9 @@ export default function ProjectsPage() {
             target="_blank"
             rel="noopener noreferrer">
             <img
-              src="/images/thumbprint-contact-two.png"
+              src="/images/thumbprint-contact-three.png"
               alt="Contact List Thumbprint"
-              className="w-50 rounded shadow-md hover:scale-105 transition"
+              className="w-60 rounded shadow-md hover:scale-105 transition border-8 border-gray-700"
             />
           </a>
         </div>
