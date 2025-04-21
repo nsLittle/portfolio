@@ -54,7 +54,7 @@ export default function ContactPage() {
     <>
       <Header />
 
-      <div className="px-[100px] pt-[130px] pb-[100px] text-[#5a5a5a]">
+      <div className="px-[100px] pt-[130px] pb-[100px]">
         <h2 className="text-7xl font-bold mb-12">Contact Me</h2>
 
         <form onSubmit={handleSubmit} className="max-w-xl space-y-8">
