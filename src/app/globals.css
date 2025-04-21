@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --button-bg: #3a3a3a;
 }
 
 @theme inline {
@@ -16,11 +17,52 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --button-bg: #4a4a4a;
   }
 }
 
 body {
-  background: var(--background);
+  background: transparent;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background-image: url("/images/white-brick.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+html.dark {
+  background-image: url("/images/black-brick.jpg") !important;
+}
+
+header {
+  background-image: url("/images/white-brick.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+html.dark header {
+  background-image: url("/images/black-brick.jpg");
+}
+
+@layer utilities {
+  .bg-brick-light {
+    background-image: url("/images/white-brick.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+  }
+
+  .bg-brick-dark {
+    background-image: url("/images/black-brick.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: fixed;
+  }
 }
