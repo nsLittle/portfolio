@@ -7,112 +7,120 @@ export default function ProjectsPage() {
   return (
     <>
       <Header />
+      <section className="px-6 sm:px-12 py-12 max-w-5xl mx-auto space-y-16 pt-[150px]">
+        <div>
+          <h2 className="text-5xl font-bold mb-6">Projects</h2>
 
-      <div className="ml-[100px] pt-[130px] pb-[100px] text-[#5a5a5a]">
-        <h2 className="text-7xl font-bold">Projects</h2>
+          <div className="space-y-16">
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Habit App
+              </h3>
+              <p className="text-sm text-gray-500 mt-1 mb-3">
+                React Native | Node.js | Express | MongoDB
+              </p>
+              <p className="text-gray-600 mb-4">
+                Built a mobile-first full-stack app focused on feedback-driven
+                habit tracking. Includes reminder logic, teammate feedback
+                loops, and secure user authentication via JWT.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <iframe
+                  className="w-full sm:w-1/3 aspect-video rounded-md"
+                  src="https://www.loom.com/embed/c552437966af4f2899eb77eaa36ecf2a?sid=464cf749-baff-49e0-83b4-9545469653c7"
+                  allowFullScreen></iframe>
+                <iframe
+                  className="w-full sm:w-1/3 aspect-video rounded-md"
+                  src="https://www.loom.com/embed/7127d045d9e149d0afdde2d8868bcdbe?sid=7d7c6bb7-f0ee-473a-8d38-28737d4bf85e"
+                  allowFullScreen></iframe>
+              </div>
+            </div>
 
-        <h5 className="ml-[25px] text-3xl pt-[50px]">Habit App</h5>
-        <div className="ml-[25px] job-title flex flex-col gap-x-2 mt-4">
-          <p className="text-base pt-[15px] pl-[25px] w-[80%] font-bold">
-            React Native | Node.js | Express | MongoDB
-          </p>
-          <p className="text-base pt-[15px] pl-[25px] w-[80%]">
-            Built a mobile-first full-stack app focused on feedback-driven habit
-            tracking. Includes reminder logic, teammate feedback loops, and
-            secure user authentication via JWT.
-          </p>
-        </div>
-        <div className="flex flex-row gap-6 text-base pl-[50px] pt-[20px] w-[40%] text-justify">
-          <iframe
-            src="https://www.loom.com/embed/c552437966af4f2899eb77eaa36ecf2a?sid=464cf749-baff-49e0-83b4-9545469653c7"
-            allowFullScreen
-            className="w-full max-w-md aspect-video rounded shadow-md"></iframe>
-          <iframe
-            src="https://www.loom.com/embed/7127d045d9e149d0afdde2d8868bcdbe?sid=7d7c6bb7-f0ee-473a-8d38-28737d4bf85e"
-            allowFullScreen
-            className="w-full max-w-md aspect-video rounded shadow-md"></iframe>
-        </div>
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Power of Prompt Engineering
+              </h3>
+              <p className="text-sm text-gray-500 mt-1 mb-3">
+                React | Next.js | OpenAI API
+              </p>
+              <p className="text-gray-600 mb-4">
+                Integrated ChatGPT via custom API routing to transform user
+                inputs into real-time, reframed outputs using prompt-engineering
+                techniques.
+              </p>
 
-        <h5 className="ml-[25px] text-3xl pt-[50px]">
-          Power of Prompt Engineering
-        </h5>
-        <div className="ml-[25px] job-title flex flex-col gap-x-2 mt-4">
-          <p className="text-base pt-[15px] pl-[25px] w-[80%] font-bold">
-            React | Next.js | OpenAI API
-          </p>
-          <p className="text-base pt-[15px] pl-[25px] w-[80%]">
-            Integrated ChatGPT via custom API routing to transform user inputs
-            into real-time, reframed outputs.
-          </p>
-        </div>
-        <div className="flex flex-row gap-6 text-base pl-[50px] pt-[20px] w-[80%] text-justify">
-          <a
-            href="https://reframer-473c134b8246.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="/images/thumbprint-reframer.png"
-              alt="Reframer Thumbprint"
-              className="w-60 rounded shadow-md hover:scale-105 transition"
-            />
-          </a>
-          <a
-            href="https://negativity-reframer-5d42696baa3b.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="/images/thumbprint-negativity.png"
-              alt="Negativity Thumbprint"
-              className="w-60 rounded shadow-md hover:scale-105 transition"
-            />
-          </a>
-          <a
-            href="https://limitless-reframer-7e82e380af02.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="/images/thumbprint-limitless.png"
-              alt="Limitless Thumbprint"
-              className="w-60 rounded shadow-md hover:scale-105 transition"
-            />
-          </a>
-        </div>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://reframer-473c134b8246.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="/images/thumbprint-reframer.png"
+                    alt="Reframer Thumbprint"
+                    className="w-60 rounded shadow-md hover:scale-105 transition"
+                  />
+                </a>
 
-        <h5 className="ml-[25px] text-3xl pt-[50px]">
-          Contact Management System
-        </h5>
-        <div className="ml-[25px] job-title flex flex-col gap-x-2 mt-4">
-          <p className="text-base pt-[15px] pl-[25px] w-[80%] font-bold">
-            React | Typescript | Next.js
-          </p>
-          <p className="text-base pt-[15px] pl-[25px] w-[80%]">
-            CRUD application allowing users to add, edit, delete, and sort
-            contacts.
-          </p>
+                <a
+                  href="https://negativity-reframer-5d42696baa3b.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="/images/thumbprint-negativity.png"
+                    alt="Negativity Thumbprint"
+                    className="w-60 rounded shadow-md hover:scale-105 transition"
+                  />
+                </a>
+                <a
+                  href="https://limitless-reframer-7e82e380af02.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="/images/thumbprint-limitless.png"
+                    alt="Limitless Thumbprint"
+                    className="w-60 rounded shadow-md hover:scale-105 transition"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold text-gray-800">
+                Contact Management System
+              </h3>
+              <p className="text-sm text-gray-500 mt-1 mb-3">
+                React | Typescript | Next.js
+              </p>
+              <p className="text-gray-600 mb-4">
+                CRUD application allowing users to add, edit, delete, and sort
+                contacts.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://dream-contact-list.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="/images/thumbprint-contact-three.png"
+                    alt="Contact List Thumbprint"
+                    className="w-60 rounded shadow-md hover:scale-105 transition border-8 border-gray-700"
+                  />
+                </a>
+                <a
+                  href="https://dream-contact-list.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="/images/thumbprint-contact-three.png"
+                    alt="Contact List Thumbprint"
+                    className="w-60 rounded shadow-md hover:scale-105 transition border-8 border-gray-700"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-row gap-6 text-base pl-[50px] pt-[20px] w-[80%] text-justify">
-          <a
-            href="https://dream-contact-list.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="/images/thumbprint-contact-three.png"
-              alt="Contact List Thumbprint"
-              className="w-60 rounded shadow-md hover:scale-105 transition border-8 border-gray-700"
-            />
-          </a>
-          <a
-            href="https://dream-contact-list.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <img
-              src="/images/thumbprint-contact-three.png"
-              alt="Contact List Thumbprint"
-              className="w-60 rounded shadow-md hover:scale-105 transition border-8 border-gray-700"
-            />
-          </a>
-        </div>
-      </div>
+      </section>
     </>
   );
 }

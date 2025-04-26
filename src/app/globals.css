@@ -22,9 +22,9 @@ body {
 
 html {
   background-image: url("/images/white-brick.jpg") !important;
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
+  background-size: 700px 700px !important;
+  background-repeat: repeat !important;
+  background-position: top left !important;
 }
 
 html.dark {
