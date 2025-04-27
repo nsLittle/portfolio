@@ -27,19 +27,23 @@ html {
   background-position: top left !important;
 }
 
-/* html.dark {
+html.dark {
   background-image: url("/images/black-brick.jpg") !important;
+  background-size: 1000px 1000px !important; /* 🧠 Bigger bricks in dark mode */
+  background-repeat: repeat !important;
+  background-position: top left !important;
   --background: #0a0a0a;
   --foreground: #ededed;
   --button-bg: #4a4a4a;
   --text-color: #d4d4d4;
-} */
+}
 
-/* html.dark header {
+html.dark header {
   background-image: url("/images/black-brick.jpg");
   color: var(--text-color);
-} */
+}
 
+/*
 section,
 h1,
 h2,
@@ -69,9 +73,9 @@ p {
   }
 } */
 
-header {
+/* header {
   background-image: url("/images/white-brick.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
