@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { FaDownload, FaPrint, FaLinkedin, FaGithub } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
@@ -52,63 +53,65 @@ export default function ContactPage() {
 
   return (
     <>
-      <Header />
+      <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end min-h-[90vh] sm:min-h-[95vh] px-6 sm:px-20 pt-[130px] sm:pt-[160px] pb-12 sm:pb-[25vh] text-center sm:text-right">
+        <div className="max-w-xl w-full">
+          <h2 className="text-5xl sm:text-7xl font-bold mb-8 sm:mb-12">
+            Contact Me
+          </h2>
 
-      <div className="px-[100px] pt-[130px] pb-[100px]">
-        <h2 className="text-7xl font-bold mb-12">Contact Me</h2>
+          <form onSubmit={handleSubmit} className="space-y-8">
+            <div className="flex flex-col">
+              <label htmlFor="fullName" className="mb-2 font-semibold">
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                value={templateParams.fullName}
+                onChange={handleChange}
+                className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                required
+              />
+            </div>
 
-        <form onSubmit={handleSubmit} className="max-w-xl space-y-8">
-          <div className="flex flex-col">
-            <label htmlFor="fullName" className="mb-2 font-semibold">
-              Full Name
-            </label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              value={templateParams.fullName}
-              onChange={handleChange}
-              className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
-              required
-            />
-          </div>
+            <div className="flex flex-col">
+              <label htmlFor="email" className="mb-2 font-semibold">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={templateParams.email}
+                onChange={handleChange}
+                className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                required
+              />
+            </div>
 
-          <div className="flex flex-col">
-            <label htmlFor="email" className="mb-2 font-semibold">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={templateParams.email}
-              onChange={handleChange}
-              className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
-              required
-            />
-          </div>
+            <div className="flex flex-col">
+              <label htmlFor="message" className="mb-2 font-semibold">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={templateParams.message}
+                onChange={handleChange}
+                rows={5}
+                className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                required></textarea>
+            </div>
 
-          <div className="flex flex-col">
-            <label htmlFor="message" className="mb-2 font-semibold">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              value={templateParams.message}
-              onChange={handleChange}
-              rows={5}
-              className="bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
-              required></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="bg-[#5a5a5a] hover:bg-gray-700 text-white px-6 py-3 mt-[30px] rounded shadow-md transition-all duration-200">
-            Submit
-          </button>
-        </form>
-      </div>
+            <button
+              type="submit"
+              className="bg-[#5a5a5a] hover:bg-gray-700 text-white px-6 py-3 mt-6 rounded shadow-md transition-all duration-200">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
     </>
   );
 }

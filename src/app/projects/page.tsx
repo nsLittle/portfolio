@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 export default function ProjectsPage() {
   return (
     <>
-      <Header />
       <section className="px-6 sm:px-12 py-12 max-w-5xl mx-auto space-y-16 pt-[150px]">
         <div>
           <h2 className="text-5xl font-bold mb-6">Projects</h2>

@@ -13,12 +13,10 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed top-0 left-0 right-0 z-50 h-30 bg-[url('/images/white-brick.jpg')] bg-cover bg-center border-b border-gray-300 shadow-sm">
+      className="fixed top-0 left-0 right-0 z-50 h-20 sm:h-30 border-b border-gray-300 shadow-sm w-full">
       <div className="flex justify-between items-center px-6 sm:px-10 pt-4 sm:pt-2">
-        {/* Logo or dark mode toggle */}
-        <div className="px-2 mt-2">
-          {/* You can put a logo here if you want */}
-        </div>
+        {/* Future Logo */}
+        <div className="px-2 mt-2">{/* Place Logo Here */}</div>
 
         {/* Desktop Nav */}
         <nav className="hidden sm:flex justify-end space-x-6 text-xl font-medium mt-6">
@@ -47,11 +45,11 @@ export default function Header() {
               Contact Me
             </Link>
           )}
-          {/* Desktop Dark Mode toggle */}
+          {/* Desktop Dark Mode Toggle */}
           <DarkModeToggle />
         </nav>
 
-        {/* Mobile Hamburger Icon */}
+        {/* Mobile Hamburger */}
         <div className="sm:hidden flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -104,60 +102,12 @@ export default function Header() {
               Contact Me
             </Link>
           )}
-          {/* Mobile Dark Mode toggle */}
+          {/* Mobile Dark Mode Toggle */}
           <div className="mt-4 flex justify-center">
             <DarkModeToggle />
           </div>
         </div>
       )}
     </header>
-    // <header
-    //   id="header"
-    //   className="fixed top-0 left-0 right-0 z-50 h-30 bg-[url('/images/white-brick.jpg')] bg-cover bg-center border-b border-gray-300 shadow-sm">
-    //   <div className="flex justify-between items-start px-10 pt-2">
-    //     <div className="px-5 mt-10">
-    //       <DarkModeToggle />
-    //     </div>
-    //     <nav className="px-4 mt-10">
-    //       <ul className="flex justify-end space-x-6 text-xl font-medium">
-    //         {pathname !== "/" && (
-    //           <li>
-    //             <Link href="/" className="hover:text-gray-900">
-    //               Home
-    //             </Link>
-    //           </li>
-    //         )}
-    //         {pathname !== "/about" && (
-    //           <li>
-    //             <Link href="/about" className="hover:text-gray-900">
-    //               About
-    //             </Link>
-    //           </li>
-    //         )}
-    //         {pathname !== "/projects" && (
-    //           <li>
-    //             <Link href="/projects" className="hover:text-gray-900">
-    //               Projects
-    //             </Link>
-    //           </li>
-    //         )}
-    //         {pathname !== "/resume" && (
-    //           <li>
-    //             <Link href="/resume" className="hover:text-gray-900">
-    //               Resume
-    //             </Link>
-    //           </li>
-    //         )}
-    //         {pathname !== "/contact" && (
-    //           <li>
-    //             <Link href="/contact" className="hover:text-gray-900">
-    //               Contact Me
-    //             </Link>
-    //           </li>
-    //         )}
-    //       </ul>
-    //     </nav>
-    //   </div>
-    // </header>
   );
 }
