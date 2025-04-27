@@ -13,13 +13,13 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="fixed top-0 left-0 right-0 z-50 h-20 sm:h-30 border-b border-gray-300 shadow-sm w-full">
+      className="sticky top-0 left-0 right-0 z-50 h-20 sm:h-20 w-full">
       <div className="flex justify-between items-center px-6 sm:px-10 pt-4 sm:pt-2">
         {/* Future Logo */}
         <div className="px-2 mt-2">{/* Place Logo Here */}</div>
 
         {/* Desktop Nav */}
-        <nav className="hidden sm:flex justify-end space-x-6 text-xl font-medium mt-6">
+        <nav className="hidden sm:flex justify-end space-x-6 text-2xl font-medium mt-6">
           {pathname !== "/" && (
             <Link href="/" className="hover:text-gray-900">
               Home
