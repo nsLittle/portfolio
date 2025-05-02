@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export default function ProjectsPage() {
   return (
     <>
-      <section className="px-6 sm:px-12 py-12 max-w-5xl mx-auto space-y-16 pt-[150px]">
+      <section className="min-h-screen px-6 sm:px-12 py-12 max-w-5xl mx-auto space-y-16 pt-[150px]">
         <div>
           <h2 className="text-5xl font-bold mb-6">Projects</h2>
 
@@ -24,14 +24,26 @@ export default function ProjectsPage() {
                 loops, and secure user authentication via JWT.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <iframe
-                  className="w-full sm:w-1/3 aspect-video rounded-md"
-                  src="https://www.loom.com/embed/c552437966af4f2899eb77eaa36ecf2a?sid=464cf749-baff-49e0-83b4-9545469653c7"
-                  allowFullScreen></iframe>
-                <iframe
-                  className="w-full sm:w-1/3 aspect-video rounded-md"
-                  src="https://www.loom.com/embed/7127d045d9e149d0afdde2d8868bcdbe?sid=7d7c6bb7-f0ee-473a-8d38-28737d4bf85e"
-                  allowFullScreen></iframe>
+                <a
+                  href="https://www.loom.com/embed/c552437966af4f2899eb77eaa36ecf2a?sid=464cf749-baff-49e0-83b4-9545469653c7"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="/images/thumbprint-loom-one.png"
+                    alt="Reframer Thumbprint"
+                    className="w-60 rounded shadow-md hover:scale-105 transition"
+                  />
+                </a>
+                <a
+                  href="https://www.loom.com/embed/7127d045d9e149d0afdde2d8868bcdbe?sid=7d7c6bb7-f0ee-473a-8d38-28737d4bf85e"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  <img
+                    src="/images/thumbprint-loom-two.png"
+                    alt="Reframer Thumbprint"
+                    className="w-60 rounded shadow-md hover:scale-105 transition"
+                  />
+                </a>
               </div>
             </div>
 

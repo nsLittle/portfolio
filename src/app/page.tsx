@@ -7,7 +7,7 @@ export default function Home() {
         Fullstack Software Engineer
       </p>
       <h1
-        className="text-5xl sm:text-[7rem] font-bold leading-tight sm:leading-[1.1]"
+        className="text-5xl sm:text-[6rem] font-bold leading-tight sm:leading-[1.1]"
         style={{ color: "rgb(90, 90, 90)" }}>
         Mutsumi Hata
       </h1>
