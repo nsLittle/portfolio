@@ -70,7 +70,7 @@ export default function ContactPage() {
                 name="fullName"
                 value={templateParams.fullName}
                 onChange={handleChange}
-                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white/90"
                 required
               />
             </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                 name="email"
                 value={templateParams.email}
                 onChange={handleChange}
-                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white/90"
                 required
               />
             </div>
@@ -100,13 +100,11 @@ export default function ContactPage() {
                 value={templateParams.message}
                 onChange={handleChange}
                 rows={5}
-                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white/90"
                 required></textarea>
             </div>
 
-            <button
-              type="submit"
-              className="bg-[#5a5a5a] hover:bg-gray-700 text-white px-6 py-3 mt-6 rounded shadow-md transition-all duration-200">
+            <button className="bg-neutral-700 text-white px-6 py-2 rounded-md shadow-md hover:bg-neutral-900 hover:shadow-lg hover:scale-105 transform transition duration-200">
               Submit
             </button>
           </form>

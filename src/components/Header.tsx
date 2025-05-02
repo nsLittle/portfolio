@@ -12,8 +12,14 @@ export default function Header() {
 
   return (
     <header
-      id="header"
-      className="sticky top-0 left-0 right-0 z-50 h-20 sm:h-20 w-full">
+      className="fixed top-0 left-0 w-full h-25 z-50 bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/images/white-brick.jpg')",
+        backgroundAttachment: "scroll",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}>
+      {" "}
       <div className="flex justify-between items-center px-6 sm:px-10 pt-4 sm:pt-2">
         {/* Future Logo */}
         <div className="px-2 mt-2">{/* Place Logo Here */}</div>
@@ -21,27 +27,27 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="hidden sm:flex justify-end space-x-6 text-2xl font-medium mt-6">
           {pathname !== "/" && (
-            <Link href="/" className="hover:text-gray-900">
+            <Link href="/" className="hover:text-gray-800">
               Home
             </Link>
           )}
           {pathname !== "/about" && (
-            <Link href="/about" className="hover:text-gray-900">
+            <Link href="/about" className="hover:text-gray-800">
               About
             </Link>
           )}
           {pathname !== "/projects" && (
-            <Link href="/projects" className="hover:text-gray-900">
+            <Link href="/projects" className="hover:text-gray-800">
               Projects
             </Link>
           )}
           {pathname !== "/resume" && (
-            <Link href="/resume" className="hover:text-gray-900">
+            <Link href="/resume" className="hover:text-gray-800">
               Resume
             </Link>
           )}
           {pathname !== "/contact" && (
-            <Link href="/contact" className="hover:text-gray-900">
+            <Link href="/contact" className="hover:text-gray-800">
               Contact Me
             </Link>
           )}
@@ -58,7 +64,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="sm:hidden bg-white/90 backdrop-blur-md p-6 space-y-4 text-center shadow-md">

@@ -27,11 +27,11 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/images/favicon.ico" type="image/jpeg" />
       </Head>
-      <body
-        className={`${inter.className} bg-brick-light dark:bg-brick-dark`}
-        style={{ minHeight: "100vh" }}>
+      <body className={`${inter.className}`} style={{ minHeight: "100vh" }}>
         <ThemeProvider>
-          <div>
+          <div className="fixed inset-0 z-0 bg-cover bg-center"></div>
+
+          <div className="relative z-10">
             <Header />
             <main className="min-h-screen">{children}</main>
             <Footer />
