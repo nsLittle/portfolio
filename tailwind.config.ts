@@ -8,7 +8,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
   ],
-  safelist: ["bg-header-light", "bg-header-dark", "dark:bg-header-dark"],
+  safelist: [
+    "bg-header-light",
+    "bg-header-dark",
+    "dark:bg-header-dark",
+    "text-gray-800",
+    "dark:text-gray-200",
+  ],
+
   theme: {
     extend: {
       backgroundImage: {

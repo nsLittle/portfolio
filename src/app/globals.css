@@ -22,10 +22,16 @@ body {
 
 html {
   background-image: url("/images/white-brick.jpg");
-  background-size: 1000px auto;
+  background-size: 1200px auto;
   background-repeat: repeat-y;
   background-position: top center;
   background-attachment: scroll;
+}
+
+@media (max-width: 640px) {
+  html {
+    background-size: 400px auto; /* 📱 Scales bricks better on small screens */
+  }
 }
 
 html,
@@ -39,7 +45,7 @@ body {
 
 html.dark {
   background-image: url("/images/black-brick.jpg") !important;
-  background-size: 1000px 1000px !important; /* 🧠 Bigger bricks in dark mode */
+  background-size: 1200px 1200px !important; /* 🧠 Bigger bricks in dark mode */
   background-repeat: repeat !important;
   background-position: top left !important;
   --background: #0a0a0a;
@@ -50,5 +56,6 @@ html.dark {
 
 html.dark header {
   background-image: url("/images/black-brick.jpg");
+  background-size: 1000px 1000px !important;
   color: var(--text-color);
 }

@@ -11,14 +11,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header
-      className="fixed top-0 left-0 w-full h-25 z-50 bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/images/white-brick.jpg')",
-        backgroundAttachment: "scroll",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}>
+    <header className="fixed top-0 left-0 w-full h-25 z-50 bg-white-brick dark:bg-black-brick bg-no-repeat bg-scroll bg-cover bg-center bg-[length:1200px_auto] sm:bg-[length:1200px_1200px]">
       {" "}
       <div className="flex justify-between items-center px-6 sm:px-10 pt-4 sm:pt-2">
         {/* Future Logo */}
@@ -26,31 +19,50 @@ export default function Header() {
 
         {/* Desktop Nav */}
         <nav className="hidden sm:flex justify-end space-x-6 text-2xl font-medium mt-6">
-          {pathname !== "/" && (
-            <Link href="/" className="hover:text-gray-800">
-              Home
-            </Link>
-          )}
-          {pathname !== "/about" && (
-            <Link href="/about" className="hover:text-gray-800">
-              About
-            </Link>
-          )}
-          {pathname !== "/projects" && (
-            <Link href="/projects" className="hover:text-gray-800">
-              Projects
-            </Link>
-          )}
-          {pathname !== "/resume" && (
-            <Link href="/resume" className="hover:text-gray-800">
-              Resume
-            </Link>
-          )}
-          {pathname !== "/contact" && (
-            <Link href="/contact" className="hover:text-gray-800">
-              Contact Me
-            </Link>
-          )}
+          <Link
+            href="/"
+            className={`hover:text-gray-800 ${
+              pathname === "/" ? "font-bold border-b-2 border-gray-700" : ""
+            }`}>
+            Home
+          </Link>
+
+          <Link
+            href="/about"
+            className={`hover:text-gray-800 ${
+              pathname === "/about"
+                ? "font-bold border-b-2 border-gray-700"
+                : ""
+            }`}>
+            About
+          </Link>
+          <Link
+            href="/projects"
+            className={`hover:text-gray-800 ${
+              pathname === "/projects"
+                ? "font-bold border-b-2 border-gray-700"
+                : ""
+            }`}>
+            Projects
+          </Link>
+          <Link
+            href="/resume"
+            className={`hover:text-gray-800 ${
+              pathname === "/resume"
+                ? "font-bold border-b-2 border-gray-700"
+                : ""
+            }`}>
+            Resume
+          </Link>
+          <Link
+            href="/contact"
+            className={`hover:text-gray-800 ${
+              pathname === "/contact"
+                ? "font-bold border-b-2 border-gray-700"
+                : ""
+            }`}>
+            Contact
+          </Link>
           {/* Desktop Dark Mode Toggle */}
           <DarkModeToggle />
         </nav>

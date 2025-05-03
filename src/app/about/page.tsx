@@ -21,8 +21,8 @@ export default function AboutPage() {
   const texts = [
     "I'm a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
     "Master juggler of priorities, nurturer of creativity, I find beauty in the mundane and chaotic.",
-    "Curiosity fuels the soul, sometimes kills the cat.",
-    "Cats have nine lives, and I have five. Numbers are in my favor.",
+    "Curiosity fuels the soul, and sometimes kills the cat.",
+    "Cats have nine lives. I have five cats. The numbers are in my favor.",
     "Life's greatest joys often come from small, thoughtful moments. Technology can help amplify that joy.",
     "Whimsy is a daily necessity.",
   ];
@@ -36,35 +36,37 @@ export default function AboutPage() {
 
   return (
     <>
-      <div className="ml-[100px] pt-[130px] pb-[100px] text-[#737373]">
-        <h2 className="text-7xl font-bold">About</h2>
-        <div className="flex flex-row items-start justify-between gap-12 px-[100px] pt-[80px] pl-[40px]">
-          <div className="relative w-[320px] h-[320px]">
-            {images.map((src, index) => (
-              <img
-                key={index}
-                src={src}
-                alt={`Selfie ${index + 1}`}
-                className={`absolute top-0 left-0 w-[320px] h-auto rounded shadow-md transition-opacity duration-1000 ease-in-out ${
-                  index === activeIndex ? "opacity-100" : "opacity-0"
-                }`}
-              />
-            ))}
-          </div>
+      <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end min-h-[90vh] sm:min-h-[95vh] px-6 sm:px-20 pt-[120px] pb-12 sm:pb-[25vh] text-center sm:text-right">
+        <div className="max-w-3xl w-full">
+          <h2 className="text-5xl sm:text-6xl font-bold mb-8 sm:mb-20">
+            About
+          </h2>
+          <div className="flex flex-col-reverse sm:flex-row sm:gap-10 items-center sm:items-stretch justify-center mt-6 sm:mt-2">
+            {/* TEXT BLOCK */}
+            <div className="flex w-full sm:w-1/2 items-center justify-center text-center sm:justify-end sm:text-right px-2">
+              <div className="max-w-lg">
+                <p className="text-xl sm:text-3xl leading-relaxed sm:leading-loose opacity-100 !text-opacity-100">
+                  {texts[activeIndex]}
+                </p>
+              </div>
+            </div>
 
-          <div className="relative w-[45%] min-h-[140px] mt-[120px]">
-            {texts.map((text, index) => (
-              <p
-                key={index}
-                className={`absolute top-0 left-0 transition-opacity duration-1000 ease-in-out ${
-                  index === activeIndex ? "opacity-100" : "opacity-0"
-                } text-[#737373] filter grayscale text-lg text-center`}>
-                {text}
-              </p>
-            ))}
+            {/* IMAGE BLOCK */}
+            <div className="relative w-[280px] sm:w-[320px] md:w-[400px] h-[400px]">
+              {images.map((src, index) => (
+                <img
+                  key={index}
+                  src={src}
+                  alt={`Selfie ${index + 1}`}
+                  className={`absolute top-0 left-0 w-full h-full object-cover rounded shadow-md transition-opacity duration-1000 ease-in-out ${
+                    index === activeIndex ? "opacity-100" : "opacity-0"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }

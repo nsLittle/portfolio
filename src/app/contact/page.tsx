@@ -55,7 +55,7 @@ export default function ContactPage() {
     <>
       <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end min-h-[90vh] sm:min-h-[95vh] px-6 sm:px-20 pt-[130px] sm:pt-[160px] pb-12 sm:pb-[25vh] text-center sm:text-right">
         <div className="max-w-xl w-full">
-          <h2 className="text-5xl sm:text-7xl font-bold mb-8 sm:mb-12">
+          <h2 className="text-5xl sm:text-6xl font-bold mb-8 sm:mb-12">
             Contact Me
           </h2>
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
                 name="fullName"
                 value={templateParams.fullName}
                 onChange={handleChange}
-                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white/90"
+                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
                 required
               />
             </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
                 name="email"
                 value={templateParams.email}
                 onChange={handleChange}
-                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white/90"
+                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
                 required
               />
             </div>
@@ -100,11 +100,11 @@ export default function ContactPage() {
                 value={templateParams.message}
                 onChange={handleChange}
                 rows={5}
-                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white/90"
+                className="w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
                 required></textarea>
             </div>
 
-            <button className="bg-neutral-700 text-white px-6 py-2 rounded-md shadow-md hover:bg-neutral-900 hover:shadow-lg hover:scale-105 transform transition duration-200">
+            <button className="bg-neutral-700 dark:bg-gray-400 text-white px-6 py-2 rounded-md shadow-md hover:bg-neutral-900 hover:shadow-lg hover:scale-105 transform transition duration-200">
               Submit
             </button>
           </form>
