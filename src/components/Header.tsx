@@ -78,12 +78,14 @@ export default function Header() {
       </div>
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="sm:hidden bg-white/90 backdrop-blur-md p-6 space-y-4 text-center shadow-md">
+        <div
+          className="sm:hidden bg-white dark:bg-white text-black dark:text-black
+ backdrop-blur-md p-6 space-y-4 text-center shadow-md">
           {pathname !== "/" && (
             <Link
               href="/"
               onClick={() => setIsOpen(false)}
-              className="block text-lg">
+              className="block text-lg text-black dark:text-black">
               Home
             </Link>
           )}

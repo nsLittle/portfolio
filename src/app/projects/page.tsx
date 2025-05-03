@@ -1,25 +1,21 @@
 "use client";
 import { FaDownload, FaPrint, FaLinkedin, FaGithub } from "react-icons/fa";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 export default function ProjectsPage() {
   return (
     <>
       <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end px-6 sm:px-20 pt-[130px] sm:pt-[160px] pb-12 sm:pb-[25vh] text-center sm:text-right">
-        <div className="max-w-xl w-full">
+        <div className="w-full">
           <h2 className="text-5xl sm:text-6xl font-bold">Projects</h2>
-          {/* <h2 className="text-5xl sm:text-6xl mb-6 text-right border-t border-gray-300"></h2> */}
-
           <div className="flex flex-col items-end text-right mt-8">
             <div className="space-y-6 mb-8">
               <div className="flex flex-col items-center text-center sm:items-end sm:text-right">
                 <div className="sm:text-right flex-1">
-                  <h3 className="text-2xl font-semibold">Habit App</h3>
-                  <p className="text-sm mt-1 mb-2">
+                  <h5 className="text-3xl  pt-5">Habit App</h5>
+                  <p className="text-xl mt-1 mb-2">
                     React Native | Node.js | Express | MongoDB
                   </p>
-                  <p className="text-gray-600 dark:text-gray-200 max-w-4xl ml-auto">
+                  <p className="text-lg max-w-4xl ml-auto">
                     Built a mobile-first, full-stack app designed around habit
                     formation using feedback loops and reflection intervals.
                     Developed in React Native and Express, with RESTful APIs for
@@ -75,13 +71,13 @@ export default function ProjectsPage() {
             <div className="space-y-6 mb-8">
               <div className="flex flex-col items-center text-center sm:items-end sm:text-right">
                 <div className="sm:text-right flex-1">
-                  <h3 className="text-2xl font-semibold">
+                  <h5 className="text-3xl  pt-5">
                     Power of Prompt Engineering
-                  </h3>
-                  <p className="text-sm mt-1 mb-2">
+                  </h5>
+                  <p className="text-xl mt-1 mb-2">
                     React | Next.js | OpenAI API
                   </p>
-                  <p className="text-gray-600 dark:text-gray-200 max-w-4xl ml-auto">
+                  <p className="text-lg max-w-4xl ml-auto">
                     Reframer is a real-time AI communication tool powered by a
                     custom integration with the ChatGPT API. Built with Next.js
                     and React, it offers three distinct personas—Growth Mindset,
@@ -134,13 +130,11 @@ export default function ProjectsPage() {
             <div className="space-y-6 mb-8">
               <div className="flex flex-col items-center text-center sm:items-end sm:text-right">
                 <div className="sm:text-right flex-1">
-                  <h3 className="text-2xl font-semibold">
-                    Contact Management System
-                  </h3>
-                  <p className="text-sm mt-1 mb-2">
+                  <h5 className="text-3xl  pt-5">Contact Management System</h5>
+                  <p className="text-xl mt-1 mb-2">
                     React | Typescript | Next.js
                   </p>
-                  <p className="text-gray-600 dark:text-gray-200 max-w-4xl ml-auto">
+                  <p className="text-lg max-w-4xl ml-auto">
                     Designed a responsive CRUD system using React and TypeScript
                     with component typing and state management. Implemented
                     sortable, searchable lists of contact data with dynamic

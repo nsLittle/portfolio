@@ -36,15 +36,15 @@ export default function AboutPage() {
 
   return (
     <>
-      <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end min-h-[90vh] sm:min-h-[95vh] px-6 sm:px-20 pt-[120px] pb-12 sm:pb-[25vh] text-center sm:text-right">
-        <div className="max-w-3xl w-full">
-          <h2 className="text-5xl sm:text-6xl font-bold mb-8 sm:mb-20">
+      <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end px-6 sm:px-20 pt-[130px] sm:pt-[160px] pb-12 sm:pb-[25vh] text-center sm:text-right">
+        <div className="max-w-5xl w-full">
+          <h2 className="text-5xl sm:text-6xl font-bold mb-20 sm:mb-16">
             About
           </h2>
-          <div className="flex flex-col-reverse sm:flex-row sm:gap-10 items-center sm:items-stretch justify-center mt-6 sm:mt-2">
+          <div className="flex flex-row sm:gap-10 items-center sm:items-center justify-end mt-8 sm:mt-2">
             {/* TEXT BLOCK */}
-            <div className="flex w-full sm:w-1/2 items-center justify-center text-center sm:justify-end sm:text-right px-2">
-              <div className="max-w-lg">
+            <div className="flex w-full sm:w-3/5 items-center justify-center text-center sm:justify-end sm:text-right px-2">
+              <div className="max-w-xl">
                 <p className="text-xl sm:text-3xl leading-relaxed sm:leading-loose opacity-100 !text-opacity-100">
                   {texts[activeIndex]}
                 </p>
@@ -52,7 +52,7 @@ export default function AboutPage() {
             </div>
 
             {/* IMAGE BLOCK */}
-            <div className="relative w-[280px] sm:w-[320px] md:w-[400px] h-[400px]">
+            <div className="relative w-[280px] sm:w-[400px] md:w-[460px] h-[460px]">
               {images.map((src, index) => (
                 <img
                   key={index}
