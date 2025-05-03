@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-header-light dark:bg-header-dark bg-cover bg-center text-gray-700 dark:text-gray-200 text-sm px-2 sm:px-6 py-6 border-t border-gray-200 dark:border-gray-700">
+    <footer className="w-full text-gray-700 dark:text-gray-200 text-sm px-2 sm:px-6 py-6 border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-4xl mx-auto flex flex-col justify-start items-start gap-y-1 ps-1 text-sm text-[#5a5a5a]">
         <p className="text-sm text-[#737373]">© 2025 Mutsumi Hata</p>
 

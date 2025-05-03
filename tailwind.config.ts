@@ -1,8 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
-  content: ["./app/**/*.{js,ts,jsx,tsx}", "./src/**/*.{js,ts,jsx,tsx}"],
-  safelist: ["bg-header-light", "bg-header-dark", "dark:bg-header-dark"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+  ],
+  safelist: [
+    "bg-header-light",
+    "bg-header-dark",
+    "dark:bg-header-dark",
+    "text-gray-800",
+    "dark:text-gray-200",
+  ],
+
   theme: {
     extend: {
       backgroundImage: {
