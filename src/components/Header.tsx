@@ -63,7 +63,6 @@ export default function Header() {
             }`}>
             Contact
           </Link>
-          {/* Desktop Dark Mode Toggle */}
           <DarkModeToggle />
         </nav>
 
@@ -76,7 +75,6 @@ export default function Header() {
           </button>
         </div>
       </div>
-      {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div
           className="sm:hidden bg-white dark:bg-white text-black dark:text-black
