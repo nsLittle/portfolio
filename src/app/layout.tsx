@@ -30,6 +30,7 @@ export default function RootLayout({
       <body className={`${inter.className}`} style={{ minHeight: "100vh" }}>
         <ThemeProvider>
           <div className="fixed inset-0 z-0 bg-cover bg-center"></div>
+          <div className="fixed inset-0 z-0 bg-white opacity-40 pointer-events-none"></div>
 
           <div className="relative z-10">
             <Header />
