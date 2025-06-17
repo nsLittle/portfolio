@@ -26,11 +26,30 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/images/favicon.ico" type="image/jpeg" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+        (function () {
+          try {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark') {
+              document.documentElement.classList.add('dark');
+            } else {
+              document.documentElement.classList.remove('dark');
+            }
+          } catch (_) {}
+        })();
+      `,
+          }}
+        />
       </Head>
-      <body className={`${inter.className}`} style={{ minHeight: "100vh" }}>
+
+      <body
+        className={`${inter.className} bg-brick-light dark:bg-brick-dark`}
+        style={{ minHeight: "100vh" }}>
         <ThemeProvider>
           <div className="fixed inset-0 z-0 bg-cover bg-center"></div>
-          <div className="fixed inset-0 z-0 bg-white opacity-40 pointer-events-none"></div>
+          {/* <div className="fixed inset-0 z-0 bg-white opacity-60 pointer-events-none"></div> */}
 
           <div className="relative z-10">
             <Header />
