@@ -10,7 +10,7 @@ export default function ResumePage() {
         <div className="max-w-5xl w-full">
           <h2 className="text-5xl sm:text-6xl font-bold">Resume</h2>
 
-          <div className="pt-5 mt-0 flex justify-center sm:justify-end gap-x-8 text-[color:var(--text-color)]">
+          <div className="pt-5 mt-0 flex justify-center sm:justify-end gap-x-8 text-[color:var(--text-color)] mb-10">
             <a
               href="/images/hata-resume.pdf"
               download
@@ -27,6 +27,10 @@ export default function ResumePage() {
           </div>
 
           <h5 className="text-3xl  pt-5">Fullstack Software Engineer</h5>
+          <p className="text-xl  pt-5 mb-10">
+            JavaScript | React | Node.js | TypeScript | MERN
+          </p>
+
           <div className="job-title flex flex-row mt-4">
             <p className="text-center sm:text-right ml-auto mr-0 pt-[5px] w-[90%] text-lg">
               Strategic administrator turned software engineer, I translate

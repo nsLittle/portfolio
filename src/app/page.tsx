@@ -4,6 +4,9 @@ export default function Home() {
       <p className="text-lg sm:text-[2rem] mb-2 tracking-wide">
         Fullstack Software Engineer
       </p>
+      <p className="text-sm sm:text-xl mb-2 tracking-wide">
+        JavaScript builder crafting joyful, real-world tools
+      </p>
       <h1 className="text-5xl sm:text-[6rem] font-bold leading-tight sm:leading-[1.1]">
         Mutsumi Hata
       </h1>
