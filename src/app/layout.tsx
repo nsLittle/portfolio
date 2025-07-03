@@ -1,21 +1,35 @@
+"use client";
+
 import type { Metadata } from "next";
 import Head from "next/head";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/context/ThemeContext";
+import { ThemeProvider, useTheme } from "@/context/ThemeContext";
 import { Inter } from "next/font/google";
+import { useState, useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Portfolio",
-  description:
-    "Fullstack Software Engineer | Creative Technologist | Empathic Strategist",
-  icons: {
-    icon: "/images/favicon.ico",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Portfolio",
+//   description:
+//     "Fullstack Software Engineer | Creative Technologist | Empathic Strategist",
+//   icons: {
+//     icon: "/images/favicon.ico",
+//   },
+// };
+
+function DarkOverlay() {
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted || theme !== "dark") return null;
+
+  return <div className="fixed inset-0 z-10 bg-black/60 pointer-events-none" />;
+}
 
 export default function RootLayout({
   children,
@@ -45,11 +59,12 @@ export default function RootLayout({
       </Head>
 
       <body
-        className={`${inter.className} bg-brick-light dark:bg-brick-dark`}
+        className={`${inter.className} bg-brick-light dark:bg-brick-dark relative`}
         style={{ minHeight: "100vh" }}>
         <ThemeProvider>
           <div className="fixed inset-0 z-0 bg-cover bg-center"></div>
-          {/* <div className="fixed inset-0 z-0 bg-white opacity-60 pointer-events-none"></div> */}
+
+          <DarkOverlay />
 
           <div className="relative z-10">
             <Header />
