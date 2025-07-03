@@ -60,9 +60,9 @@ export default function ContactPage() {
           </h2>
 
           <p className="text-lg mb-6">
-            I’m open to short-term contracts, creative collaborations, or
-            mission-driven roles, especially with early-stage teams. If you’ve
-            got something brewing, I’d love to hear from you.
+            I&apos;m open to short-term contracts, creative collaborations, or
+            mission-driven roles, especially with early-stage teams. If
+            you&apos;ve got something brewing, I&apos;d love to hear from you.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-8">

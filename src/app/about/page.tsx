@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-
 import { useState, useEffect, useRef } from "react";
 import { FaDownload, FaPrint, FaLinkedin, FaGithub } from "react-icons/fa";
 import Header from "@/components/Header";
@@ -19,9 +18,9 @@ export default function AboutPage() {
   ];
 
   const texts = [
-    "I’m a strategic administrator turned software engineer, known for translating complexity into clarity.",
+    "I&apos;m a strategic administrator turned software engineer, known for translating complexity into clarity.",
     "After directing ground operations for a $5M research lab, I now design and build full-stack applications by leveraging language models and clean, purposeful code.",
-    "I'm a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
+    "I&apos;m a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
     "Master juggler of priorities, nurturer of creativity, I find beauty in the mundane and chaotic.",
     "Whimsy is a daily necessity.",
     "Ready to build something joyful? Open to part-time contracts, project collaborations, or creative engineering roles. Let's talk!",
@@ -64,7 +63,7 @@ export default function AboutPage() {
             {/* IMAGE BLOCK */}
             <div className="relative w-[280px] sm:w-[400px] md:w-[460px] h-[460px]">
               {images.map((src, index) => (
-                <img
+                <Image
                   key={index}
                   src={src}
                   alt={alts[index]}

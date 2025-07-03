@@ -52,9 +52,9 @@ export default function ResumePage() {
                 practices.
               </li>
               <li className="before:content-['•'] before:mr-4">
-                Scaled a solo entrepreneur CEO’s LinkedIn content presence with
-                a 6-month period, resulting in a 1,000% increase in impressions
-                and 200% in connections
+                Scaled a solo entrepreneur CEO&apos;s LinkedIn content presence
+                with a 6-month period, resulting in a 1,000% increase in
+                impressions and 200% in connections
               </li>
             </ul>
           </div>
@@ -132,9 +132,10 @@ export default function ResumePage() {
           <div className="text-base pt-5 w-full sm:w-[90%] text-center sm:text-right ml-auto mr-0">
             <ul className="text-center sm:text-right list-none space-y-2 text-lg">
               <li className="before:content-['•'] before:mr-4">
-                Created a web app that transforms a user’s negative self-talk
-                into constructive reframes using selectable personas, ranging
-                from supportive growth mindset to blunt, no-nonsense redirection
+                Created a web app that transforms a user&apos;s negative
+                self-talk into constructive reframes using selectable personas,
+                ranging from supportive growth mindset to blunt, no-nonsense
+                redirection
               </li>
               <li className="before:content-['•'] before:mr-4">
                 Built with Next.js, ChatGPT API, and Netlify to demonstrate how
