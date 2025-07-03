@@ -18,7 +18,7 @@ export default function AboutPage() {
   ];
 
   const texts = [
-    "I&apos;m a strategic administrator turned software engineer, known for translating complexity into clarity.",
+    "I'm a strategic administrator turned software engineer, known for translating complexity into clarity.",
     "After directing ground operations for a $5M research lab, I now design and build full-stack applications by leveraging language models and clean, purposeful code.",
     "I&apos;m a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
     "Master juggler of priorities, nurturer of creativity, I find beauty in the mundane and chaotic.",
@@ -67,6 +67,8 @@ export default function AboutPage() {
                   key={index}
                   src={src}
                   alt={alts[index]}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 460px"
                   className={`absolute top-0 left-0 w-full h-full object-cover rounded shadow-md transition-opacity duration-1000 ease-in-out ${
                     index === activeIndex ? "opacity-100" : "opacity-0"
                   }`}
