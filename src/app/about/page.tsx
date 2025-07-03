@@ -27,6 +27,15 @@ export default function AboutPage() {
     "Ready to build something joyful? Open to part-time contracts, project collaborations, or creative engineering roles. Let's talk!",
   ];
 
+  const alts = [
+    "Mutsumi Hata smiling in a gray blouse, standing outside near a modern glass building",
+    "Mutsumi Hata confidently posing in a black suit with arms crossed, leaning against a wall in a sunlit corridor",
+    "Close-up portrait of Mutsumi Hata with soft lighting, wearing a black top and a calm, introspective expression",
+    "Mutsumi Hata seated by a window in a green turtleneck, surrounded by bookshelves and natural light",
+    "Dramatic close-up of Mutsumi Hata with partial face in shadow, showing a focused gaze and pearl earring",
+    "Mutsumi Hata in a taupe suit, smiling gently with hands in pockets, standing against a minimalist architectural backdrop",
+  ];
+
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % texts.length);
@@ -58,7 +67,7 @@ export default function AboutPage() {
                 <img
                   key={index}
                   src={src}
-                  alt={`Selfie ${index + 1}`}
+                  alt={alts[index]}
                   className={`absolute top-0 left-0 w-full h-full object-cover rounded shadow-md transition-opacity duration-1000 ease-in-out ${
                     index === activeIndex ? "opacity-100" : "opacity-0"
                   }`}
