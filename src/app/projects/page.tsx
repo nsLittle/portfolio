@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { FaDownload, FaPrint, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function ProjectsPage() {
@@ -32,7 +33,7 @@ export default function ProjectsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group">
-                  <img
+                  <Image
                     src="/images/thumbprint-loom-one.png"
                     alt="Habit App Thumbnail 1"
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
@@ -51,7 +52,7 @@ export default function ProjectsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group">
-                  <img
+                  <Image
                     src="/images/thumbprint-loom-two.png"
                     alt="Habit App Thumbnail 2"
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
@@ -96,7 +97,7 @@ export default function ProjectsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group">
-                  <img
+                  <Image
                     src="/images/thumbprint-reframer.png"
                     alt="Reframer Thumbprint"
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
@@ -107,7 +108,7 @@ export default function ProjectsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group">
-                  <img
+                  <Image
                     src="/images/thumbprint-negativity.png"
                     alt="Negativity Thumbprint"
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
@@ -118,7 +119,7 @@ export default function ProjectsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group">
-                  <img
+                  <Image
                     src="/images/thumbprint-limitless.png"
                     alt="Limitless Thumbprint"
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
@@ -150,7 +151,7 @@ export default function ProjectsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group">
-                  <img
+                  <Image
                     src="/images/thumbprint-contact-three.png"
                     alt="Contact List Thumbprint"
                     className="w-50 rounded shadow-md group-hover:scale-105 transition border-8 border-gray-400"
@@ -169,7 +170,7 @@ export default function ProjectsPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="relative group">
-                  <img
+                  <Image
                     src="/images/thumbprint-contact-three.png"
                     alt="Contact List Thumbprint"
                     className="w-50 rounded shadow-md group-hover:scale-105 transition border-8 border-gray-400"
@@ -185,51 +186,6 @@ export default function ProjectsPage() {
                 </a>
               </div>
             </div>
-
-            {/*
-            <div className="space-y-6 mb-8">
-              <div className="flex sm:flex-row justify-between items-start sm:items-center gap-6 sm:gap-12">
-                <div className="sm:text-right flex-1">
-                  <h3 className="text-2xl font-semibold">
-                    Contact Management System
-                  </h3>
-                  <p className="text-sm mt-1 mb-2">
-                    React | Typescript | Next.js
-                  </p>
-                  <p className="text-gray-600 mb-4">
-                    Designed a responsive CRUD system using React and TypeScript
-                    with component typing and state management. Implemented
-                    sortable, searchable lists of contact data with dynamic
-                    filtering. Built out custom hooks for form validation and
-                    modular input handling. Deployed on Netlify for static
-                    serving.
-                  </p>
-
-                  <div className="flex justify-end flex-wrap gap-4 mt-4">
-                    <a
-                      href="https://dream-contact-list.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <img
-                        src="/images/thumbprint-contact-three.png"
-                        alt="Contact List Thumbprint"
-                        className="w-[85%] sm:w-[25%] md:w-[280px] max-w-[300px] rounded shadow-md hover:scale-105 transition border-8 border-gray-400"
-                      />
-                    </a>
-                    <a
-                      href="https://dream-contact-list.netlify.app/"
-                      target="_blank"
-                      rel="noopener noreferrer">
-                      <img
-                        src="/images/thumbprint-contact-three.png"
-                        alt="Contact List Thumbprint"
-                        className="w-[85%] sm:w-[25%] md:w-[280px] max-w-[300px] rounded shadow-md hover:scale-105 transition border-8 border-gray-400"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>

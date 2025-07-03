@@ -54,10 +54,16 @@ export default function ContactPage() {
   return (
     <>
       <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end min-h-[90vh] sm:min-h-[95vh] px-6 sm:px-20 pt-[130px] sm:pt-[160px] pb-12 sm:pb-[25vh] text-center sm:text-right">
-        <div className="max-w-xl w-full">
-          <h2 className="text-5xl sm:text-6xl font-bold mb-8 sm:mb-12">
-            Contact Me
+        <div className="w-full max-w-4xl sm:max-w-[65%]">
+          <h2 className="text-5xl sm:text-6xl font-bold mb-4 sm:mb-10">
+            Let&apos;s Talk!
           </h2>
+
+          <p className="text-lg mb-6">
+            I&apos;m open to short-term contracts, creative collaborations, or
+            mission-driven roles, especially with early-stage teams. If
+            you&apos;ve got something brewing, I&apos;d love to hear from you.
+          </p>
 
           <form onSubmit={handleSubmit} className="space-y-8">
             <div className="flex flex-col">
@@ -70,7 +76,7 @@ export default function ContactPage() {
                 name="fullName"
                 value={templateParams.fullName}
                 onChange={handleChange}
-                className="text-right w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
+                className="text-black dark:text-black text-right w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
                 required
               />
             </div>
@@ -85,7 +91,7 @@ export default function ContactPage() {
                 name="email"
                 value={templateParams.email}
                 onChange={handleChange}
-                className="text-right w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
+                className="text-black dark:text-black text-right w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
                 required
               />
             </div>
@@ -100,7 +106,7 @@ export default function ContactPage() {
                 value={templateParams.message}
                 onChange={handleChange}
                 rows={5}
-                className="text-right w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
+                className="text-black dark:text-black text-right w-full bg-[#fdfaf3] border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-400 border border-gray-300 rounded-md px-4 py-2 bg-white dark:bg-white"
                 required></textarea>
             </div>
 

@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-
 import { useState, useEffect, useRef } from "react";
 import { FaDownload, FaPrint, FaLinkedin, FaGithub } from "react-icons/fa";
 import Header from "@/components/Header";
@@ -14,17 +13,26 @@ export default function AboutPage() {
     "/images/selfie.2.jpg",
     "/images/selfie.3.jpg",
     "/images/selfie.4.jpg",
-    "/images/selfie.5.jpg",
-    "/images/selfie.6.png",
+    "/images/selfie.5.png",
+    "/images/selfie.6.jpg",
   ];
 
   const texts = [
-    "I'm a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
+    "I&apos;m a strategic administrator turned software engineer, known for translating complexity into clarity.",
+    "After directing ground operations for a $5M research lab, I now design and build full-stack applications by leveraging language models and clean, purposeful code.",
+    "I&apos;m a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
     "Master juggler of priorities, nurturer of creativity, I find beauty in the mundane and chaotic.",
-    "Curiosity fuels the soul, and sometimes kills the cat.",
-    "Cats have nine lives. I have five cats. The numbers are in my favor.",
-    "Life's greatest joys often come from small, thoughtful moments. Technology can help amplify that joy.",
     "Whimsy is a daily necessity.",
+    "Ready to build something joyful? Open to part-time contracts, project collaborations, or creative engineering roles. Let's talk!",
+  ];
+
+  const alts = [
+    "Mutsumi Hata smiling in a gray blouse, standing outside near a modern glass building",
+    "Mutsumi Hata confidently posing in a black suit with arms crossed, leaning against a wall in a sunlit corridor",
+    "Close-up portrait of Mutsumi Hata with soft lighting, wearing a black top and a calm, introspective expression",
+    "Mutsumi Hata seated by a window in a green turtleneck, surrounded by bookshelves and natural light",
+    "Dramatic close-up of Mutsumi Hata with partial face in shadow, showing a focused gaze and pearl earring",
+    "Mutsumi Hata in a taupe suit, smiling gently with hands in pockets, standing against a minimalist architectural backdrop",
   ];
 
   useEffect(() => {
@@ -41,6 +49,7 @@ export default function AboutPage() {
           <h2 className="text-5xl sm:text-6xl font-bold mb-20 sm:mb-16">
             About
           </h2>
+
           <div className="flex flex-row sm:gap-10 items-center sm:items-center justify-end mt-8 sm:mt-2">
             {/* TEXT BLOCK */}
             <div className="flex w-full sm:w-3/5 items-center justify-center text-center sm:justify-end sm:text-right px-2">
@@ -54,10 +63,10 @@ export default function AboutPage() {
             {/* IMAGE BLOCK */}
             <div className="relative w-[280px] sm:w-[400px] md:w-[460px] h-[460px]">
               {images.map((src, index) => (
-                <img
+                <Image
                   key={index}
                   src={src}
-                  alt={`Selfie ${index + 1}`}
+                  alt={alts[index]}
                   className={`absolute top-0 left-0 w-full h-full object-cover rounded shadow-md transition-opacity duration-1000 ease-in-out ${
                     index === activeIndex ? "opacity-100" : "opacity-0"
                   }`}

@@ -10,7 +10,7 @@ export default function ResumePage() {
         <div className="max-w-5xl w-full">
           <h2 className="text-5xl sm:text-6xl font-bold">Resume</h2>
 
-          <div className="pt-5 mt-0 flex justify-center sm:justify-end gap-x-8 text-[color:var(--text-color)]">
+          <div className="pt-5 mt-0 flex justify-center sm:justify-end gap-x-8 text-[color:var(--text-color)] mb-10">
             <a
               href="/images/hata-resume.pdf"
               download
@@ -27,6 +27,10 @@ export default function ResumePage() {
           </div>
 
           <h5 className="text-3xl  pt-5">Fullstack Software Engineer</h5>
+          <p className="text-xl  pt-5 mb-10">
+            JavaScript | React | Node.js | TypeScript | MERN
+          </p>
+
           <div className="job-title flex flex-row mt-4">
             <p className="text-center sm:text-right ml-auto mr-0 pt-[5px] w-[90%] text-lg">
               Strategic administrator turned software engineer, I translate
@@ -48,9 +52,9 @@ export default function ResumePage() {
                 practices.
               </li>
               <li className="before:content-['•'] before:mr-4">
-                Scaled a solo entrepreneur CEO’s LinkedIn content presence with
-                a 6-month period, resulting in a 1,000% increase in impressions
-                and 200% in connections
+                Scaled a solo entrepreneur CEO&apos;s LinkedIn content presence
+                with a 6-month period, resulting in a 1,000% increase in
+                impressions and 200% in connections
               </li>
             </ul>
           </div>
@@ -128,9 +132,10 @@ export default function ResumePage() {
           <div className="text-base pt-5 w-full sm:w-[90%] text-center sm:text-right ml-auto mr-0">
             <ul className="text-center sm:text-right list-none space-y-2 text-lg">
               <li className="before:content-['•'] before:mr-4">
-                Created a web app that transforms a user’s negative self-talk
-                into constructive reframes using selectable personas, ranging
-                from supportive growth mindset to blunt, no-nonsense redirection
+                Created a web app that transforms a user&apos;s negative
+                self-talk into constructive reframes using selectable personas,
+                ranging from supportive growth mindset to blunt, no-nonsense
+                redirection
               </li>
               <li className="before:content-['•'] before:mr-4">
                 Built with Next.js, ChatGPT API, and Netlify to demonstrate how
