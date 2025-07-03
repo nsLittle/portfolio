@@ -12,19 +12,15 @@ export default function AboutPage() {
   const images = [
     "/images/selfie.1.jpg",
     "/images/selfie.2.jpg",
-    "/images/selfie.3.jpg",
+    "/images/selfie.3.png",
     "/images/selfie.4.jpg",
-    "/images/selfie.5.jpg",
-    "/images/selfie.6.png",
   ];
 
   const texts = [
     "I'm a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
     "Master juggler of priorities, nurturer of creativity, I find beauty in the mundane and chaotic.",
-    "Curiosity fuels the soul, and sometimes kills the cat.",
-    "Cats have nine lives. I have five cats. The numbers are in my favor.",
-    "Life's greatest joys often come from small, thoughtful moments. Technology can help amplify that joy.",
     "Whimsy is a daily necessity.",
+    "Ready to build something joyful? I’m open to part-time contracts, project collaborations, or creative engineering roles. Let's talk!",
   ];
 
   useEffect(() => {
