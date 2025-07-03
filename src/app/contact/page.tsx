@@ -54,7 +54,7 @@ export default function ContactPage() {
   return (
     <>
       <section className="flex flex-col justify-center sm:justify-end items-center sm:items-end min-h-[90vh] sm:min-h-[95vh] px-6 sm:px-20 pt-[130px] sm:pt-[160px] pb-12 sm:pb-[25vh] text-center sm:text-right">
-        <div className="max-w-xl w-full">
+        <div className="w-full max-w-4xl sm:max-w-[65%]">
           <h2 className="text-5xl sm:text-6xl font-bold mb-8 sm:mb-12">
             Contact Me
           </h2>
