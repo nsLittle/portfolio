@@ -12,15 +12,19 @@ export default function AboutPage() {
   const images = [
     "/images/selfie.1.jpg",
     "/images/selfie.2.jpg",
-    "/images/selfie.3.png",
+    "/images/selfie.3.jpg",
     "/images/selfie.4.jpg",
+    "/images/selfie.5.png",
+    "/images/selfie.6.jpg",
   ];
 
   const texts = [
+    "I’m a strategic administrator turned software engineer, known for translating complexity into clarity.",
+    "After directing ground operations for a $5M research lab, I now design and build full-stack applications by leveraging language models and clean, purposeful code.",
     "I'm a software developer crafting human-centered tools that make life simpler, smarter, and more joyful.",
     "Master juggler of priorities, nurturer of creativity, I find beauty in the mundane and chaotic.",
     "Whimsy is a daily necessity.",
-    "Ready to build something joyful? I’m open to part-time contracts, project collaborations, or creative engineering roles. Let's talk!",
+    "Ready to build something joyful? Open to part-time contracts, project collaborations, or creative engineering roles. Let's talk!",
   ];
 
   useEffect(() => {
@@ -37,6 +41,7 @@ export default function AboutPage() {
           <h2 className="text-5xl sm:text-6xl font-bold mb-20 sm:mb-16">
             About
           </h2>
+
           <div className="flex flex-row sm:gap-10 items-center sm:items-center justify-end mt-8 sm:mt-2">
             {/* TEXT BLOCK */}
             <div className="flex w-full sm:w-3/5 items-center justify-center text-center sm:justify-end sm:text-right px-2">
