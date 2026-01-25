@@ -12,6 +12,76 @@ export default function ProjectsPage() {
             <div className="space-y-6 mb-8">
               <div className="flex flex-col items-center text-center sm:items-end sm:text-right">
                 <div className="sm:text-right flex-1">
+                  <h5 className="text-3xl  pt-5">Simple Intentions</h5>
+                  <p className="text-xl mt-1 mb-2">Next.js | MDX | Netlify</p>
+                  <p className="text-lg max-w-4xl ml-auto">
+                    Built a content-driven site for recipes, crafts, and
+                    printables with a clean, mobile-first layout and a scalable
+                    content structure. Implemented organized navigation across
+                    content types, consistent page templates, and a newsletter
+                    signup flow. Deployed to Netlify with preview builds to
+                    support rapid iteration on content and UI.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex justify-center sm:justify-end flex-wrap gap-4 mt-4">
+                <a
+                  href="https://dev--simple-intentions.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group">
+                  <Image
+                    src="/images/thumbprint-simple-intentions.png"
+                    alt="Simple Intentions Thumbprint"
+                    width={400}
+                    height={300}
+                    className="w-54 rounded shadow-md group-hover:scale-105 transition"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-6 mb-8">
+              <div className="flex flex-col items-center text-center sm:items-end sm:text-right">
+                <div className="sm:text-right flex-1">
+                  <h5 className="text-3xl  pt-5">
+                    Stowe Mercantile Inventory System
+                  </h5>
+                  <p className="text-xl mt-1 mb-2">
+                    Next.js | React | State Management | Netlify
+                  </p>
+                  <p className="text-lg max-w-4xl ml-auto">
+                    Built a mobile-first inventory counting tool for a retail
+                    store with category-based navigation and per-size quantity
+                    tracking. Optimized the workflow for fast floor counts by
+                    keeping interactions lightweight and structured, making it
+                    easy to log and review stock by product type. Deployed on
+                    Netlify for quick iteration and easy access in-store.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex justify-center sm:justify-end flex-wrap gap-4 mt-4">
+                <a
+                  href="https://stowe-mercantile-inventory.netlify.app/category/tshirts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group">
+                  <Image
+                    src="/images/thumbprint-stowe-mercantile.png"
+                    alt="Stowe Mercantile Inventory System Thumbprint"
+                    width={400}
+                    height={300}
+                    className="w-54 rounded shadow-md group-hover:scale-105 transition"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="space-y-6 mb-8">
+              <div className="flex flex-col items-center text-center sm:items-end sm:text-right">
+                <div className="sm:text-right flex-1">
                   <h5 className="text-3xl  pt-5">Habit App</h5>
                   <p className="text-xl mt-1 mb-2">
                     React Native | Node.js | Express | MongoDB
@@ -36,8 +106,11 @@ export default function ProjectsPage() {
                   <Image
                     src="/images/thumbprint-loom-one.png"
                     alt="Habit App Thumbnail 1"
+                    width={400}
+                    height={300}
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
                   />
+
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
                     <svg
                       className="w-12 h-12 text-white"
@@ -55,8 +128,11 @@ export default function ProjectsPage() {
                   <Image
                     src="/images/thumbprint-loom-two.png"
                     alt="Habit App Thumbnail 2"
+                    width={400}
+                    height={300}
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
                   />
+
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
                     <svg
                       className="w-12 h-12 text-white"
@@ -100,6 +176,8 @@ export default function ProjectsPage() {
                   <Image
                     src="/images/thumbprint-reframer.png"
                     alt="Reframer Thumbprint"
+                    width={400}
+                    height={300}
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
                   />
                 </a>
@@ -111,6 +189,8 @@ export default function ProjectsPage() {
                   <Image
                     src="/images/thumbprint-negativity.png"
                     alt="Negativity Thumbprint"
+                    width={400}
+                    height={300}
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
                   />
                 </a>
@@ -122,6 +202,8 @@ export default function ProjectsPage() {
                   <Image
                     src="/images/thumbprint-limitless.png"
                     alt="Limitless Thumbprint"
+                    width={400}
+                    height={300}
                     className="w-54 rounded shadow-md group-hover:scale-105 transition"
                   />
                 </a>
@@ -154,6 +236,8 @@ export default function ProjectsPage() {
                   <Image
                     src="/images/thumbprint-contact-three.png"
                     alt="Contact List Thumbprint"
+                    width={400}
+                    height={300}
                     className="w-50 rounded shadow-md group-hover:scale-105 transition border-8 border-gray-400"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
@@ -173,6 +257,8 @@ export default function ProjectsPage() {
                   <Image
                     src="/images/thumbprint-contact-three.png"
                     alt="Contact List Thumbprint"
+                    width={400}
+                    height={300}
                     className="w-50 rounded shadow-md group-hover:scale-105 transition border-8 border-gray-400"
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition">
